@@ -405,7 +405,7 @@
 :root {
 	--admin-bar-background-color:                           hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-normal) 18% / 1.0);
     --sidebar-background-color:                             var(--color-extra-darksteel-normal);
-    --sidebar-background-color:                             blue;
+    --sidebar-background-color:                             yellow;
 	--sidebar-background-selected:                          var(--color-darksteel-primary-hover);
 	--sidebar-submenu-background-color:                     var(--color-darksteel-primary-normal);
 	--sidebar-submenu-text-color:                           var(--btn-dark-primary-text-color-normal);
