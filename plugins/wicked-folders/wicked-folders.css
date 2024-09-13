@@ -1,0 +1,583 @@
+body .wicked-folders-breadcrumbs {
+	border: solid 1px #ccd0d4;
+	border-bottom-width: 0;
+	background: var(--card-background-color);
+	padding: 10px;
+	clear: both;
+	color: var(--card-header-dark-text-color);
+	border: none;
+	border-width: var(--card-border-width);
+	border-style: var(--card-border-style);
+	border-color: var(--card-border-color);
+	border-radius: var(--card-border-radius);
+	background: var(--btn-dark-primary-background-color-normal);
+	margin-bottom: var(--size-2xs);
+	font-size: var(--btn-font-size);
+	letter-spacing: var(--btn-letter-spacing);
+	font-weight: var(--btn-font-weight);
+}
+
+body .wicked-folders-breadcrumbs ul.wicked-folder-path li {
+	color: var(--btn-dark-primary-text-color-hover);
+	font-weight: 500;
+}
+
+body .wicked-folders-breadcrumbs ul.wicked-folder-path li a {
+	color: var(--btn-dark-primary-text-color-normal);
+	font-weight: var(--btn-font-weight);
+}
+
+body #adminmenu #toplevel_page_wicked_folders_toggle *,
+body #adminmenu #toplevel_page_wicked_folders_toggle a {
+    color: var(--btn-dark-primary-text-color-normal);
+    transition: var(--btn-transition);
+    transition-property: var(--btn-transition-property);
+}
+
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane).wicked-folder-pane.wicked-media-modal-folder-pane {
+	background: #fff;
+	padding: var(--card-container-padding) var(--card-container-padding);
+	display: flex;
+	flex-direction: column;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane),
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) * {
+	box-sizing: border-box;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-panel,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) fieldset,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) input[type="text"],
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) select,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .select2-container--default .select2-search--dropdown .select2-search__field,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .select2-container--default .select2-selection--single,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .select2-dropdown.select2-dropdown--below {
+	height: auto;
+	min-height: var(--input-min-height) !important;
+	padding-top: var(--input-padding-top);
+	padding-right: var(--input-padding-right);
+	padding-bottom: var(--input-padding-bottom);
+	padding-left: var(--input-padding-left);
+	box-sizing: border-box;
+	font-size: var(--input-font-size);
+	line-height: var(--input-line-height);
+	cursor: pointer;
+	color: var(--input-text-color);
+	border-width: var(--input-border-width);
+	border-style: var(--input-border-style);
+	border-color: var(--input-border-color-normal);
+	border-radius: var(--input-border-radius);
+	background-color: var(--input-background-color);
+	box-shadow: var(--input-box-shadow) !important;
+	-webkit-appearance: none;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) #wicked-folder-search-input {
+	margin: 0;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-content *:not(.wicked-count) {
+	font-size: var(--text-size-xs);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-resizer {
+	display: flex !important;
+	flex-direction: column;
+	overflow: visible;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane).wicked-media-modal-folder-pane .wicked-resizer {
+	left: 0;
+	top: 0 !important;
+	display: flex !important;
+	max-height: 100% !important;
+	flex-direction: column;
+	overflow: visible;
+	background: var(--bluish-gray-shade-95);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-resizer:hover:before {
+	transition: all 200ms ease-in-out;
+	background-color: var(--cyancornflower-blue-shade-2);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-resizer > div {
+	width: var(--folder-tree-gap);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-content {
+	display: flex !important;
+	flex-direction: column;
+	overflow: visible;
+	padding: var(--size-sm) var(--size-sm) var(--size-lg) var(--size-lg) !important;
+	padding: var(--folder-tree-gap) var(--folder-tree-gap) var(--card-container-padding) var(--card-container-padding) !important;
+	background: transparent;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane).wicked-media-modal-folder-pane .wicked-content {
+	left: auto;
+	top: 0 !important;
+	display: flex !important;
+	max-height: 100% !important;
+	flex-direction: column;
+	overflow: visible;
+	padding: 0 !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-content > div {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+	width: auto;
+	max-width: 100%;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-title {
+	width: auto;
+	padding: var(--size-sm) 0 var(--size-sm);
+	padding: var(--folder-tree-gap) 0 var(--folder-tree-gap);
+	margin: 0;
+	font-size: var(--text-size-xl) !important;
+	/*font-weight: 600;*/
+	font-weight: var(--heading-font-weight);
+	line-height: 1.3;
+	color: var(--body-text-primary-color);
+}
+
+body .media-modal :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-title {
+	display: none;
+}
+
+body .media-modal :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-panel,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-panel {
+	padding: var(--card-padding);
+	margin-bottom: var(--card-inner-padding);
+	overflow: hidden;
+	cursor: pointer;
+	color: var(--body-text-primary-color);
+	border-width: var(--card-border-width);
+	border-style: var(--card-border-style);
+	border-color: var(--card-border-color);
+	border-radius: var(--card-border-radius);
+	background-color: var(--card-background-color);
+	box-shadow: var(--card-box-shadow);
+	-webkit-appearance: none;
+	position: relative;
+	padding: var(--card-inner-padding);
+}
+
+body .media-modal :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-panel {
+	box-shadow: none;
+	background-color: var(--bluish-gray-shade-95);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-panel .wicked-close {
+	line-height: 1.3;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-panel .wicked-field-options {
+	line-height: 1.3;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-toolbar-container {
+	position: relative;
+	display: flex;
+	width: auto;
+	padding: var(--card-inner-padding);
+	padding: var(--size-2xs);
+	margin-top: 0;
+	margin-bottom: var(--card-inner-padding);
+	margin-bottom: 0;
+	overflow: hidden;
+	font-weight: 600;
+	cursor: pointer;
+	color: var(--card-header-dark-text-color);
+	border: none;
+	border-width: var(--card-border-width);
+	border-style: var(--card-border-style);
+	border-color: var(--card-border-color);
+	border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+	background: var(--btn-dark-primary-background-color-normal);
+	box-shadow: var(--card-box-shadow);
+	box-shadow: none;
+	align-items: center;
+	-webkit-appearance: none;
+	justify-content: start;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane).wicked-folder-pane .wicked-folder-tree-container {
+	display: flex;
+	flex-direction: column;
+	overflow-y: hidden;
+	width: 100%;
+	max-width: 100%;
+	flex-shrink: 0;
+	flex-basis: 0;
+	flex-grow: 1;
+	padding: 0;
+	border-radius: 0;
+	gap: 0;
+	position: initial;
+	background: transparent;
+	/*background: cyan;*/
+	box-shadow: none;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-tree {
+	white-space: nowrap;
+	width: 100% !important;
+	max-width: 100% !important;
+	flex-shrink: 0 !important;
+	flex-basis: 0 !important;
+	flex-grow: 1 !important;
+	background: #fff;
+	border-radius: var(--card-border-radius);
+	padding: var(--card-inner-padding);
+	display: flex;
+	flex-direction: column;
+	overflow-y: hidden !important;
+	overflow-x: hidden !important;
+	margin: 0;
+	background: var(--card-background-color);
+	box-shadow: var(--card-box-shadow);
+	border: none !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto !important;
+	overflow-x: auto !important;
+	background: var(--card-background-color);
+	border-radius: var(--card-border-radius);
+	white-space: nowrap;
+	border-style: none;
+	--scrollbar-thumb-border-color: var(--card-scrollbar-thumb-border-color);
+	--scrollbar-thumb-border-width: var(--card-scrollbar-thumb-border-width);
+	--scrollbar-thumb-border-width: 4px;
+	--scrollbar-track-background: var(--card-scrollbar-track-background);
+	--scrollbar-width: var(--card-scrollbar-width);
+	--scrollbar-width: 14px;
+}
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+}
+body .media-modal :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-search-container,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-search-container {
+	padding: var(--card-inner-padding);
+	margin-bottom: var(--card-inner-padding);
+	background: var(--card-background-color);
+	box-shadow: var(--card-box-shadow);
+	border-radius: var(--card-border-radius);
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+	width: auto;
+	max-width: 100%;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-content .wicked-folder-details-container {
+	width: auto;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-folder {
+	display: inline-flex;
+	height: var(--folder-droppable-height);
+	min-height: var(--folder-droppable-height);
+	max-height: var(--folder-droppable-height);
+	max-width: calc(100% - var(--size-xs));
+	padding: 0 0 !important;
+	padding-left: calc((var(--folder-tree-gap) - 1px)* .5) !important;
+	padding-right: calc((var(--folder-tree-gap) - 1px)* .5) !important;
+	overflow: visible;
+	font-size: var(--btn-font-size);
+	line-height: 1;
+	color: var(--folder-droppable-text-color);
+	border-radius: var(--border-radius-md);
+	align-items: center;
+	column-gap: var(--size-4xs);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li:not(.has-children) .wicked-folder {
+	/*margin-left: var(--size-sm) !important;*/
+	margin-left: var(--folder-tree-gap) !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree ul {
+	padding-left: calc((var(--folder-tree-gap)* 1.5) - 1px);
+	margin: 0 !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree ul li {
+	position: relative;
+	margin-bottom: 0;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li:after {
+	position: absolute;
+	content: "";
+	top: calc(var(--folder-droppable-height) * .5 * -1);
+	left: calc(var(--folder-tree-gap) * -1);
+	display: block;
+	width: 0;
+	border-left: solid 1px var(--bluish-gray-shade-80);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li:before {
+	position: absolute;
+	content: "";
+	top: calc(var(--folder-droppable-height) * .5 * -1);
+	left: calc(var(--folder-tree-gap) * -1);
+	display: block;
+	width: 15px;
+	width: var(--folder-tree-gap);
+	border-left: solid 1px var(--bluish-gray-shade-80);
+	border-bottom: solid 1px var(--bluish-gray-shade-80);
+	height: var(--folder-droppable-height);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree ul li:last-child:after {
+	height: calc(var(--folder-droppable-height) * .5);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree > li:before, 
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree > li:after {
+	display: none !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li[data-folder-id="dynamic_root"] > .wicked-folder .wicked-icon {
+	color: var(--btn-theme-primary-background-color-normal);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li:not(.has-children) a.wicked-toggle {
+	position: absolute;
+	top: 0;
+	height: 1.5em;
+	height: 100%;
+	opacity: 0;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree a.wicked-toggle {
+	width: var(--folder-tree-gap) !important;
+	color: var(--bluish-gray-shade-60);
+	min-height: var(--folder-droppable-height);
+	max-height: var(--folder-droppable-height);
+	position: relative;
+	z-index: 10;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree a.wicked-toggle::before {
+	width: 100%;
+	font-size: 1.4em;
+	line-height: var(--size-xl);
+	opacity: 1;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-folder:hover:not(:disabled) {
+	background: var(--folder-droppable-background-color-hover);
+	background-color: var(--folder-droppable-background-color-hover);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-selected > span > .wicked-folder,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-selected > .wicked-folder {
+	color: var(--folder-droppable-text-color-selected) !important;
+	background: var(--folder-droppable-background-color-selected);
+	background-color: var(--folder-droppable-background-color-selected);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-folder.wicked-drop-hover {
+	cursor: default;
+	border-radius: var(--border-radius-md);
+	outline: dashed 1px var(--btn-theme-border-color-focus);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-folder .wicked-count {
+	padding: 0;
+	margin-left: 0;
+	font-size: var(--text-size-2xs) !important;
+	line-height: 1;
+	color: var(--bluish-gray-shade-75) !important;
+	background: transparent !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-selected > a.wicked-folder > span.wicked-count {
+	padding: 0;
+	margin-left: 0;
+	line-height: 1;
+	color: var(--bluish-gray-shade-60) !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-folder .wicked-icon {
+	width: 1em !important;
+	font-size: var(--text-size-md);
+	color: var(--folder-icon-color-normal);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li.wicked-expanded.wicked-selected > .wicked-folder .wicked-icon {
+	color: var(--folder-icon-color-selected);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree .wicked-folder .wicked-icon:before {
+	display: block;
+	width: 1em;
+	margin-bottom: -1px;
+	font-family: "WickedFontAwesome";
+	font-size: var(--folder-icon-font-size);
+	content: "\f07b";
+	align-items: center;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li.wicked-expanded:not(.has-children) > a.wicked-toggle:before {
+	height: inherit;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li.wicked-expanded.has-children > a.wicked-toggle:before {
+	content: "\f0d7";
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) ul.wicked-tree li.wicked-expanded.has-children > .wicked-folder .wicked-icon:before {
+	content: "\f07c";
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) select {
+	background: var(--bluish-gray-shade-100) url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E") no-repeat right calc( var(--size-md)*(.3)) top 55% !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) fieldset {
+	padding: var(--size-sm);
+	padding: var(--folder-tree-gap);
+	margin: 0 0 var(--size-xl) 0;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .dashicons.dashicons-editor-help {
+	width: var(--size-sm);
+	width: var(--folder-tree-gap);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-primary,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-secondary,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a {
+	display: inline-flex;
+	height: auto;
+	min-height: var(--btn-height);
+	padding-top: var(--btn-padding-top);
+	padding-right: var(--btn-padding-right);
+	padding-bottom: var(--btn-padding-bottom);
+	padding-left: var(--btn-padding-left);
+	overflow: hidden !important;
+	box-sizing: border-box;
+	font-family: var(--btn-font-family);
+	font-size: var(--btn-font-size);
+	font-weight: var(--btn-font-weight);
+	line-height: 1;
+	letter-spacing: var(--btn-letter-spacing);
+	user-select: none !important;
+	transition: var(--btn-transition);
+	transition-property: var(--btn-transition-property);
+	white-space: nowrap !important;
+	text-decoration: none;
+	text-overflow: ellipsis !important;
+	border-width: var(--btn-border-width);
+	border-style: var(--btn-border-style);
+	border-radius: var(--btn-border-radius);
+	outline: 0;
+	box-shadow: var(--btn-box-shadow);
+	text-shadow: none;
+	align-items: center;
+	justify-content: center;
+	touch-action: none;
+	-webkit-user-drag: none !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-primary {
+	color: var(--btn-theme-primary-text-color-normal);
+	border-color: var(--btn-theme-primary-border-color-normal);
+	background-color: var(--btn-theme-primary-background-color-normal);
+	box-shadow: var(--btn-box-shadow);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-secondary,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a {
+	color: var(--btn-theme-secondary-text-color-normal);
+	border-color: var(--btn-theme-secondary-border-color-normal);
+	background-color: var(--btn-theme-secondary-background-color-normal);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-primary:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])),
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-secondary:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])),
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])),
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])) {
+	border-width: var(--btn-border-width);
+	border-style: var(--btn-border-style);
+	outline: 0;
+	box-shadow: var(--btn-box-shadow);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-primary:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])) {
+	color: var(--btn-theme-primary-text-color-hover);
+	border-color: var(--btn-theme-primary-border-color-hover);
+	background-color: var(--btn-theme-primary-background-color-hover);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button-secondary:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])),
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .button:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])),
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a:is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])) {
+	color: var(--btn-theme-secondary-text-color-hover);
+	border-color: var(--btn-theme-secondary-border-color-hover);
+	background-color: var(--btn-theme-secondary-background-color-hover);
+	box-shadow: var(--btn-box-shadow);
+}
+
+body .media-modal :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar,
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar {
+	display: flex !important;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	align-items: flex-start !important;
+	gap: .5em;
+	justify-content: flex-start !important;
+	position: initial;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a {
+	display: flex;
+	min-width: var(--btn-height);
+	min-height: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	color: var(--btn-dark-primary-text-color-normal);
+	border-color: var(--btn-dark-primary-border-color-normal);
+	background-color: var(--btn-dark-primary-background-color-normal);
+	align-items: center;
+	aspect-ratio: 1.1;
+	justify-content: center;
+	box-shadow: none !important;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a::before {
+	font-size: 1.3em;
+	line-height: 0;
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar a:not(.active):is(:active, :focus, :hover:not(:disabled, [aria-disabled=true])) {
+	color: var(--btn-dark-primary-text-color-hover);
+	border-color: var(--btn-dark-primary-border-color-hover);
+	background-color: var(--btn-dark-primary-background-color-hover);
+}
+
+body :is(#wicked-object-folder-pane, #wicked-folder-pane) .wicked-folder-pane-toolbar li {
+	width: auto;
+	border: 0;
+	flex: 1 0 auto;
+}

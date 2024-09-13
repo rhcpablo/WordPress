@@ -1,0 +1,268 @@
+.editor-styles-wrapper {
+    padding: 1rem 3rem 3rem 3rem; /*padding: 1rem 3rem 3rem 3rem;*/ padding: var(--size-sm) var(--size-12xl) var(--size-12xl) var(--size-12xl);
+    box-sizing: border-box;
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .components-toolbar-group {
+	/*background-color: #fff;*/
+	/*border-right: 1px solid #1e1e1e;*/ 
+	/*border-right: 1px solid var(--color-darksteel-primary-normal);*/
+	/*display: inline-flex;*/
+	/*flex-shrink: 0;*/
+	/*flex-wrap: wrap;*/
+	/*line-height: 0;*/
+	/*min-height: 48px;*/
+	/*padding-left: 6px;*/
+	/*padding-right: 6px;*/
+	/*padding-left: var(--size-4xs);*/
+	/*padding-right: var(--size-4xs);*/
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .components-toolbar-group .block-editor-block-toolbar__slot {
+    column-gap: var(--size-5xs);
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header {
+	padding-left: calc(var(--card-inner-padding)* .5);
+	padding-right: calc(var(--card-inner-padding)* .5);
+	    min-height: 60px;
+    height: auto;
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-header__toolbar {
+    flex-wrap: wrap;
+    gap: var(--size-4xs);
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .components-accessible-toolbar.editor-document-tools {
+	/*align-items: center;*/
+	/*display: inline-flex;*/
+	border-width: var(--card-border-width);
+    border-style: solid;
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+    box-shadow: none;
+    border-radius: var(--card-inner-border-radius);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar {
+	border-width: var(--card-border-width);
+    border-style: solid;
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+    box-shadow: none;
+    border-radius: var(--card-inner-border-radius);
+    height: auto;
+    padding-top: var(--size-3xs);
+    padding-bottom: var(--size-3xs);
+    padding: var(--size-3xs);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar {
+	    padding-top: 0;
+	    column-gap: var(--size-5xs);
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group {
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    column-gap: var(--size-5xs);
+}
+
+
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .components-button.editor-collapsible-block-toolbar__toggle.is-compact.has-icon {
+	border-width: var(--card-border-width);
+    border-style: solid;
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+    box-shadow: none;
+    border-radius: var(--card-inner-border-radius);
+    display: none;
+}
+
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-header__settings {
+	border-width: var(--card-border-width);
+    border-style: solid;
+    border-color: var(--card-border-color);
+    background-color: var(--card-background-color);
+    box-shadow: none;
+    border-radius: var(--card-inner-border-radius);
+        padding: calc(var(--card-inner-padding)* .5);
+
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .components-accessible-toolbar.editor-document-tools .editor-document-tools__left {
+    padding: calc(var(--card-inner-padding)* .5);
+    margin: 0;
+}
+
+.show-icon-labels .interface-interface-skeleton__header .editor-header.edit-post-header .components-accessible-toolbar.editor-document-tools .editor-document-tools__left>*+* {
+    margin-left: 0;
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar__toggle {
+    margin-left: 0; 
+}
+
+.show-icon-labels .interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-switcher .components-dropdown-menu__toggle .block-editor-block-icon, 
+.show-icon-labels .interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .show-icon-labels .block-editor-block-switcher__no-switcher-icon .block-editor-block-icon {
+    height: 1rem !important;
+    min-width: 0 !important;
+    width: 1rem !important;
+}
+
+.show-icon-labels .interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .components-button.has-icon:after {
+    /*content: attr(aria-label); */
+    content: "";
+}
+
+.show-icon-labels .interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .components-button.has-icon svg, 
+.show-icon-labels.interface-pinned-items .interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .components-button.has-icon svg {
+    display: block;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .components-toolbar-group .components-button.components-button:before, 
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .components-toolbar-group .components-button.has-icon.has-icon:before {
+    left: 0;
+    right: 0;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar .components-toolbar, 
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar .components-toolbar-group {
+    min-height: 0;
+        height: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar .components-toolbar .block-editor-block-toolbar__slot, 
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar .components-toolbar-group .block-editor-block-toolbar__slot {
+                display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar .components-toolbar .components-dropdown.components-dropdown-menu, 
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-toolbar .components-toolbar-group .components-dropdown.components-dropdown-menu {
+    min-height: 0;
+        height: auto;
+            display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-mover:not(.is-horizontal) .block-editor-block-mover__move-button-container {
+        height: auto;
+        min-height: 0;
+        top: 0;
+    }
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button {
+background-color: var(--editor-btn-background-color-normal);
+    border-color: var(--editor-btn-border-color-normal);
+    color: var(--editor-btn-text-color-normal);
+    transition: var(--editor-btn-transition);
+    transition-property: var(--editor-btn-transition-property);
+    border-width: var(--editor-btn-border-width);
+    border-style: var(--editor-btn-border-style);
+    border-radius: var(--editor-btn-border-radius);
+    min-width: var(--btn-compact-height);
+    width: auto;
+    min-height: var(--btn-compact-height);
+    max-height: var(--btn-compact-height);
+    height: auto;
+    font-size: var(--btn-compact-font-size);
+    padding: 0;
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon {
+    max-width: var(--btn-compact-height);
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button:not(.has-icon) {
+    max-width: 100%;
+    padding-right: var(--btn-compact-padding-right) !important;
+    padding-left: var(--btn-compact-padding-left) !important;
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon .dashicon,
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon svg,
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon::before {
+    min-width: var(--btn-compact-icon-size);
+    max-width: var(--btn-compact-icon-size);
+    min-height: var(--btn-compact-icon-size);
+    max-height: var(--btn-compact-icon-size);
+    height: var(--btn-compact-icon-size);
+    width: var(--btn-compact-icon-size);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon .dashicon {
+    align-items: center;
+    box-sizing: initial;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+    font-size: var(--btn-compact-font-size);
+    font-size: var(--btn-compact-dashicon-size);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon.is-pressed:before, 
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon.is-pressed:before {
+    background-color: transparent;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon:hover:not(:disabled):not([aria-pressed="true"]):not([aria-checked="true"]) {
+    background-color: var(--editor-btn-background-color-hover) !important;
+    border-color: var(--editor-btn-border-color-hover) !important;
+    color: var(--editor-btn-text-color-hover) !important;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon:is(.is-pressed, [aria-pressed="true"], [aria-checked="true"]),
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .components-button.has-icon:is(.is-pressed, [aria-pressed="true"], [aria-checked="true"]):hover {
+    background-color: var(--editor-btn-background-color-pressed) !important;
+    border-color: var(--editor-btn-border-color-pressed) !important;
+    color: var(--editor-btn-text-color-pressed) !important;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .block-editor-block-mover:not(.is-horizontal) .block-editor-block-mover__move-button-container {
+        height: auto;
+    min-height: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    column-gap: var(--size-5xs);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .block-editor-block-mover .block-editor-block-mover__move-button-container:before {
+    display: none;
+}
+
+.interface-interface-skeleton__header .editor-header.edit-post-header .components-accessible-toolbar.editor-document-tools .editor-document-tools__left .components-button,
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-header__settings .components-button {
+    min-height: var(--btn-compact-height);
+    height: auto;
+    padding-top: var(--btn-padding-top);
+    padding-bottom: var(--btn-padding-bottom) !important;   
+    padding-right: var(--btn-compact-padding-right) !important;
+    padding-left: var(--btn-compact-padding-left) !important;    
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    line-height: var(--btn-line-height);
+    letter-spacing: var(--btn-letter-spacing);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar:after,
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group .block-editor-block-mover:before,
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar .components-toolbar-group::after, 
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar .block-editor-block-contextual-toolbar .block-editor-block-toolbar::after {
+    min-height: var(--btn-compact-height);
+    height: var(--btn-compact-height);
+    top: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    left: 0;
+    width: 1px;
+    margin-right: var(--size-5xs);
+    margin-left: var(--size-5xs);
+    position: relative;
+        background-color: var(--card-border-color);
+    content: "";
+    height: var(--btn-compact-height);
+    width: var(--card-border-width);
+}
+.interface-interface-skeleton__header .editor-header.edit-post-header .editor-collapsible-block-toolbar:after {
+    display: none;
+}

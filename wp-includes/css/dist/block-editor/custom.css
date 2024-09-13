@@ -1,0 +1,321 @@
+.components-grid.components-tools-panel {
+	padding: var(--card-inner-padding) !important;
+	gap: var(--card-inner-padding); /*keep*/
+	/*gap: var(--card-inner-padding-in-between-components);*/
+}
+
+.components-grid.components-tools-panel > div {
+	row-gap: var(--card-inner-padding) !important;
+	row-gap: var(--card-inner-padding-in-between-components) !important;
+	line-height: initial;
+}
+
+
+.components-input-control__input {
+	height: auto !important;
+
+}
+select.components-select-control__input {
+	z-index: 1;
+	height: auto !important;
+	min-width: var(--input-select-min-width);
+	border: none !important;
+	background: transparent;
+}
+
+.components-input-control__backdrop {
+	height: auto !important;
+	min-height: var(--input-min-height) !important;
+	padding-top: var(--input-padding-top);
+	padding-right: var(--input-padding-right);
+	padding-bottom: var(--input-padding-bottom);
+	padding-left: var(--input-padding-left);
+	margin: 0;
+	box-sizing: border-box;
+	font-size: var(--input-font-size);
+	line-height: var(--input-line-height);
+	cursor: pointer;
+	transition: none;
+	color: var(--input-text-color);
+	border-width: var(--input-border-width) !important;
+	border-style: var(--input-border-style) !important;
+	border-color: var(--input-border-color-normal) !important;
+	border-radius: var(--input-border-radius) !important;
+	background-color: transparent;
+	box-shadow: var(--input-box-shadow) !important;
+	-webkit-appearance: none;
+	inset: 0;
+}
+.components-grid.components-tools-panel .components-tools-panel-header {
+	background: var(--card-header-dark-background-color);
+	color: var(--card-header-dark-text-color);
+	margin-top: calc(var(--card-inner-padding)* -1);
+	margin-left: calc(var(--card-inner-padding)* -1);
+	margin-right: calc(var(--card-inner-padding)* -1);
+	padding-left: var(--card-inner-padding);
+	padding-right: var(--card-inner-padding);
+	padding-top: var(--size-2xs);
+	padding-bottom: var(--size-2xs);
+	width: auto;
+	user-select: none !important;
+	-webkit-user-drag: none !important;
+	touch-action: none !important;
+	min-height: var(--btn-height);
+}
+.components-grid.components-tools-panel .components-tools-panel-header * {
+	color: inherit;
+}
+.components-grid.components-tools-panel .components-tools-panel-header .components-button.components-dropdown-menu__toggle.is-small.has-icon {
+    transition: var(--btn-transition);
+    transition-property: var(--btn-transition-property);
+    touch-action: none;
+    -webkit-user-drag: none !important;
+    user-select: none !important;
+    transition: var(--btn-transition);
+    transition-property: var(--btn-transition-property);
+    white-space: nowrap !important;
+    text-decoration: none;
+    text-overflow: ellipsis !important;
+}
+
+.components-tools-panel-header .components-button.components-dropdown-menu__toggle.is-small.has-icon {
+    color: var(--btn-dark-primary-text-color-normal);
+}
+    
+.components-tools-panel-header .components-button.components-dropdown-menu__toggle.is-small.has-icon:hover:not(:disabled) {
+	color: var(--btn-dark-primary-text-color-hover)
+}
+
+.block-editor-block-inspector__tabs > div[role="tabpanel"] .components-grid.components-tools-panel .components-tools-panel-header .components-button.components-dropdown-menu__toggle.is-small.has-icon {
+	color: var(--btn-light-primary-text-color-normal);
+}
+.block-editor-block-inspector__tabs > div[role="tabpanel"] .components-grid.components-tools-panel .components-tools-panel-header .components-button.components-dropdown-menu__toggle.is-small.has-icon:hover:not(:disabled) {
+	color: var(--btn-light-primary-text-color-hover);
+}
+
+.components-panel__body .components-flex.components-h-stack.components-v-stack .components-button.is-small.has-icon,
+.components-grid.components-tools-panel .components-tools-panel-item .components-button {
+	background-color: var(--editor-btn-background-color-normal);
+	border-color: var(--editor-btn-border-color-normal);
+	color: var(--editor-btn-text-color-normal);
+	transition: var(--editor-btn-transition);
+	transition-property: var(--editor-btn-transition-property);
+	border-radius: var(--editor-btn-border-radius);
+    transition: var(--editor-btn-transition);
+    transition-property: var(--editor-btn-transition-property);
+    border-width: var(--editor-btn-border-width);
+    border-style: var(--editor-btn-border-style);
+    border-radius: var(--editor-btn-border-radius);
+}
+.components-grid.components-tools-panel .components-tools-panel-item .components-button:hover:not(:disabled):not(.is-pressed) {
+	background-color: var(--editor-btn-background-color-hover);
+	border-color: var(--editor-btn-border-color-hover);
+	color: var(--editor-btn-text-color-hover);
+}
+.components-panel__body .components-flex.components-h-stack.components-v-stack .components-button.is-small.is-pressed.has-icon:not(:disabled),
+.components-grid.components-tools-panel .components-tools-panel-item .components-button.is-pressed:not(:disabled) {
+	background-color: var(--editor-btn-background-color-pressed);
+	border-color: var(--editor-btn-border-color-pressed);
+	color: var(--editor-btn-text-color-pressed);
+	
+}
+
+.components-grid.components-tools-panel .components-tools-panel-item .components-button.is-compact.has-icon:not(.has-text) {
+	/*min-width: 32px;*/ 
+	min-width: var(--btn-compact-height);
+	width: auto;
+	min-height: var(--btn-compact-height);
+	height: auto;
+	margin-right: var(--size-4xs);
+	font-size: var(--btn-compact-font-size);
+}
+
+.components-button.is-compact.has-icon:not(.has-text) svg {
+	max-width: var(--btn-compact-height);
+	max-height: var(--btn-compact-height);
+	color: inherit;
+}
+
+.components-button.is-compact.has-icon:not(.has-text) svg * {
+	fill: currentColor;
+}
+
+.components-grid.components-tools-panel .components-tools-panel-item .components-toggle-group-control {
+	border-width: var(--btn-border-width);
+	border-style: var(--btn-border-style);
+	border-color: var(--input-border-color-normal);
+	border-radius: var(--btn-border-radius);
+	background-color: transparent;
+		gap: var(--size-4xs);
+	padding: var(--size-2xs);
+}
+
+.components-toggle-group-control {
+	border: none!important;
+	min-width: 0!important;
+	min-height: 0!important;
+	padding: 0!important;
+	margin: 0!important;
+	gap: var(--size-3xs);
+}
+.components-toggle-group-control:hover {
+	border: none;
+}
+.components-toggle-group-control button {
+	background-color: var(--editor-btn-background-color-normal);
+	border-color: var(--editor-btn-border-color-normal);
+	color: var(--editor-btn-text-color-normal);
+	transition: var(--editor-btn-transition);
+	transition-property: var(--editor-btn-transition-property);
+	border-radius: var(--editor-btn-border-radius);
+    transition: var(--editor-btn-transition);
+    transition-property: var(--editor-btn-transition-property);
+    border-width: var(--editor-btn-border-width);
+    border-style: var(--editor-btn-border-style);
+    border-radius: var(--editor-btn-border-radius);
+	padding: var(--size-2xs);
+}
+.components-toggle-group-control button:hover:not(:disabled):not([aria-checked="true"]) {
+	background-color: var(--editor-btn-background-color-hover);
+	border-color: var(--editor-btn-border-color-hover);
+	color: var(--editor-btn-text-color-hover);
+}
+.components-toggle-group-control button[aria-checked="true"] {
+	/*background-color: var(--btn-light-primary-background-color-normal);
+	border-color: var(--btn-light-primary-border-color-normal);
+	color: var(--btn-light-primary-text-color-normal);*/
+	
+	    background-color: var(--editor-btn-background-color-pressed);
+    border-color: var(--editor-btn-border-color-pressed);
+    color: var(--editor-btn-text-color-pressed);
+}
+
+.components-toggle-group-control [role="presentation"] {
+	background: transparent;
+}
+.components-toggle-group-control button.components-toggle-group-control-option-base {
+	padding: 0;
+	min-width: var(--btn-compact-height);
+	width: auto;
+	min-height: var(--btn-compact-height);
+	height: auto;
+}
+.components-toggle-group-control button.components-toggle-group-control-option-base * {
+	font-size: var(--text-size-xs);
+}
+.components-toggle-group-control button.components-toggle-group-control-option-base > div {
+	padding-left: var(--size-4xs);
+	padding-right: var(--size-4xs);
+}
+.components-toggle-group-control button.components-toggle-group-control-option-base > div > svg:first-child:last-child,
+.components-toggle-group-control button.components-toggle-group-control-option-base > div > .block-editor-block-icon:first-child:last-child {
+    margin-left: calc(var(--size-4xs)* -1);
+    margin-right: calc(var(--size-4xs)* -1);
+}
+
+.components-toggle-group-control > div {
+	flex: initial;
+}
+.components-flex.components-h-stack.components-v-stack {
+   row-gap: var(--card-inner-padding);
+   row-gap: var(--card-inner-padding-in-between-components);
+}
+
+.components-base-control.components-radio-control .components-flex.components-h-stack.components-v-stack {
+   row-gap: var(--card-inner-padding-below-label);
+}
+
+
+
+
+.Xblock-editor-block-inspector div:not(.components-h-stack):not(.components-flex-item) > .components-base-control {
+	/*margin-bottom: 24px;*/
+	/*margin-top: var(--card-inner-padding);*/
+	/*margin-bottom: var(--card-inner-padding);*/
+	/*margin-bottom: var(--card-inner-padding);*/
+}
+
+.Xblock-editor-block-inspector .components-base-control:last-child {
+	margin-bottom: 0;
+}
+
+.Xblock-editor-block-inspector .components-panel__body > .components-base-control:first-of-type {
+	margin-top: 0;
+	margin-top: var(--card-inner-padding) !important;
+}
+.Xblock-editor-block-inspector .components-panel__body > .components-base-control:last-of-type {
+	margin-bottom: 0;
+	margin-bottom: var(--card-inner-padding) !important;
+}
+
+.editor-post-panel__section .components-h-stack.components-v-stack .components-base-control {
+	margin-bottom: 0;
+}
+
+.components-panel__body.is-opened>div+p {
+	padding-top: 0;
+	margin-top: 0;
+}
+.components-panel__body.is-opened>p+div {
+	padding-top: 0;
+	margin-top: 0;
+}
+.components-panel__body.is-opened>fieldset,
+.components-panel__body.is-opened>div {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: var(--card-inner-padding);
+	padding-right: var(--card-inner-padding);
+}
+
+.components-panel__body.is-opened>fieldset+div,
+.components-panel__body.is-opened>div+fieldset {
+	margin-top: var(--card-inner-padding);
+}
+
+/*.components-panel__body.is-opened>fieldset:first-of-type,
+.components-panel__body.is-opened>div:first-of-type {*/
+.components-panel__body.is-opened>fieldset:first-child,
+.components-panel__body.is-opened>h2+div,
+.components-panel__body.is-opened>.components-panel__body-title+div,
+.components-panel__body.is-opened>div:first-child {
+	padding-top: 0;
+	margin-top: var(--card-inner-padding);
+}
+
+/*.components-panel__body.is-opened>fieldset:last-of-type,
+.components-panel__body.is-opened>div:last-of-type {*/
+.components-panel__body.is-opened>fieldset:last-child,
+.components-panel__body.is-opened>div:last-child {
+	padding-bottom: 0;
+	margin-bottom: var(--card-inner-padding);
+}
+
+.components-panel__body.is-opened>div>.components-base-control {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.components-panel__body.is-opened>div>.components-base-control+.components-base-control {
+    margin-top: var(--card-inner-padding-in-between-components);
+}
+.components-panel__body.is-opened>div.components-flex {
+    row-gap: var(--card-inner-padding-in-between-components);
+}
+.components-panel__body.is-opened>.components-base-control {
+    margin-top: var(--card-inner-padding);
+    margin-bottom: 0;
+}
+
+.components-panel__body.is-opened>.components-base-control,
+.components-panel__body.is-opened>fieldset+.components-base-control+fieldset,
+.components-panel__body.is-opened>div+div,
+.components-panel__body.is-opened>.components-base-control+.components-base-control {
+    margin-top: var(--card-inner-padding-in-between-components);
+}
+
+.components-panel__body.is-opened>.components-form-token-field+.editor-post-taxonomies__flat-term-most-used {
+    /*margin-top: var(--card-inner-padding-in-between-components);*/
+}
+.components-focal-point-picker {
+    border-radius: var(--input-border-radius);
+}

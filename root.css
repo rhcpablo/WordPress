@@ -1,0 +1,1129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+	--font-family-display:          "Lexend Deca", system-ui, sans-serif;
+	--font-family-body:             "Lexend Deca", system-ui, sans-serif;
+	--font-smoothing:               antialiased;
+}
+
+:root {
+	--body-text-primary-color:      var(--color-dark-primary-color);
+	--body-text-secondary-color:    var(--color-dark-secondary-color);
+    --body-text-tertiary-color:     var(--color-dark-tertiary-color);
+	--body-text-quartary-color:     var(--color-dark-quartary-color);
+	--link-text-color-normal:       hsl(var(--color-205deg-h) 100% 37% / 1.0);
+	--link-text-color-hover:        hsl(var(--color-205deg-h) 100% 43% / 1.0);
+	--body-text-size:               var(--text-size-sm);
+	--heading-font-weight:          500;
+	--loading-file:                 transparent url(/assets/wordpress/style/wp-admin/images/loading.gif) no-repeat center;
+	--color-205deg-h:               205;
+	--color-212deg-h:               212;
+
+}
+
+:root {
+    --icon-content-font:            normal 1.5em / .5 dashicons;
+    --icon-content-close:           "\f158";
+    --icon-content-chevron-up:      "\f343";
+    --icon-content-chevron-down:    "\f347";
+    --icon-content-chevron-right:   "\f345";
+    --icon-content-chevron-left:    "\f341";
+    --icon-content-update:          "\f463";
+    --icon-content-checked:         "\f15e";
+    --icon-content-ellipsis:        "\f11c";
+    --icon-content-arrow-up:        "\f342";
+    --icon-content-arrow-down:      "\f346";
+}
+
+:root {
+	--border-radius-xs:             calc(var(--size-md) * .25);
+	--border-radius-sm:             calc(var(--size-md) * .4);
+	--border-radius-md:             calc(var(--size-md) * .5);
+	--border-radius-lg:             calc(var(--size-md) * .7);
+	--border-radius-xl:             calc(var(--size-md) * .85);
+}
+
+:root {
+    --color-warning-h:                      var(--color-cornsilk-h);
+    --color-warning-normal:                 hsl(var(--color-warning-h) 100% 58% / 1.0);
+    --color-warning-hover:                  hsl(var(--color-warning-h) 100% 65% / 1.0);
+    --color-danger-h:                       var(--color-red-h);
+    --color-danger-normal:                  hsl(var(--color-danger-h) 65% 45% / 1.0);
+    --color-danger-hover:                   hsl(var(--color-danger-h) 70% 55% / 1.0);
+    --color-success-h:                      var(--color-mediumspringgreen-h);
+    --color-success-normal:                 hsl(var(--color-success-h) 70% 45% / 1.0);
+    --color-success-hover:                  hsl(var(--color-success-h) 70% 52% / 1.0);
+}
+    
+:root {
+    --color-theme-primary-s-normal:               75%;
+    --color-theme-primary-s-hover:                85%;
+    --color-theme-primary-b-normal:               50%;
+    --color-theme-primary-b-hover:                57%;
+    --color-theme-primary-normal:                 hsl(var(--color-205deg-h) var(--color-theme-primary-s-normal) var(--color-theme-primary-b-normal) / 1.0);
+    --color-theme-primary-hover:                  hsl(var(--color-205deg-h) var(--color-theme-primary-s-hover) var(--color-theme-primary-b-hover) / 1.0);
+    --color-theme-primary-pressed:                var(--color-darksteel-primary-normal);
+    --color-theme-primary-text:                    #fff;
+    --color-theme-primary-danger-hue-rotate:      -200deg;
+}
+
+:root {
+    --color-dark-primary-h:          var(--color-212deg-h); 
+    --color-dark-primary-color:      hsl(var(--color-212deg-h) 28% 28% / 1.0);
+    --color-dark-secondary-color:    hsl(var(--color-212deg-h) 24% 37% / 1.0);
+    --color-dark-tertiary-color:     hsl(var(--color-212deg-h) 23% 47% / 1.0);
+    --color-dark-quartary-color:     hsl(var(--color-212deg-h) 15% 60% / 1.0);
+}
+
+:root {
+    --color-darksteel-primary-s-normal:          28%;
+    --color-darksteel-primary-s-hover:           30%;
+    --color-darksteel-primary-b-normal:          35%;
+    --color-darksteel-primary-b-hover:           44%;
+    --color-darksteel-primary-normal:            hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-normal) var(--color-darksteel-primary-b-normal) / 1.0);
+    --color-darksteel-primary-hover:             hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-hover) var(--color-darksteel-primary-b-hover) / 1.0);
+    --color-darksteel-primary-pressed:           hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-hover) var(--color-darksteel-primary-b-hover) / 1.0);
+    --color-darksteel-primary-alpha-50:          hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-normal) var(--color-darksteel-primary-b-normal) / 0.5);
+    --color-darksteel-primary-text:              #fff;
+}
+
+:root {
+    --color-darksteel-secondary-s-normal:        24%;
+    --color-darksteel-secondary-s-hover:         29%;
+    --color-darksteel-secondary-b-normal:        46%;
+    --color-darksteel-secondary-b-hover:         53%;
+    --color-darksteel-secondary-normal:          hsl(var(--color-212deg-h) var(--color-darksteel-secondary-s-normal) var(--color-darksteel-secondary-b-normal) / 1.0);
+    --color-darksteel-secondary-hover:           hsl(var(--color-212deg-h) var(--color-darksteel-secondary-s-hover) var(--color-darksteel-secondary-b-hover) / 1.0);
+    --color-darksteel-secondary-pressed:           hsl(var(--color-212deg-h) var(--color-darksteel-secondary-s-hover) var(--color-darksteel-secondary-b-hover) / 1.0);
+    --color-darksteel-secondary-alpha-50:        hsl(var(--color-212deg-h) var(--color-darksteel-secondary-s-normal) var(--color-darksteel-secondary-b-normal) / 0.5);
+    --color-darksteel-secondary-text:               var(--color-darksteel-primary-normal);
+}
+
+:root {
+    --color-darksteel-tertiary-s-normal:         33%;
+    --color-darksteel-tertiary-s-hover:          38%;
+    --color-darksteel-tertiary-b-normal:         59%;
+    --color-darksteel-tertiary-b-hover:          66%;
+    --color-darksteel-tertiary-normal:           hsl(var(--color-212deg-h) var(--color-darksteel-tertiary-s-normal) var(--color-darksteel-tertiary-b-normal) / 1.0);
+    --color-darksteel-tertiary-hover:            hsl(var(--color-212deg-h) var(--color-darksteel-tertiary-s-hover) var(--color-darksteel-tertiary-b-hover) / 1.0);
+    --color-darksteel-tertiary-pressed:          hsl(var(--color-212deg-h) var(--color-darksteel-tertiary-s-hover) var(--color-darksteel-tertiary-b-hover) / 1.0);
+    --color-darksteel-tertiary-alpha-50:         hsl(var(--color-212deg-h) var(--color-darksteel-tertiary-s-normal) var(--color-darksteel-tertiary-b-normal) / 0.5);
+    --color-extra-darksteel-normal:             hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-normal) 24% / 1.0);
+    --color-ultra-darksteel-normal:             hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-normal) 18% / 1.0);
+
+}
+
+:root {
+    --color-light-primary-s-normal:         15%;
+    --color-light-primary-s-hover:          20%;
+    --color-light-primary-b-normal:         85%;
+    --color-light-primary-b-hover:          92%;
+    --color-light-primary-normal:           hsl(var(--color-212deg-h) var(--color-light-primary-s-normal) var(--color-light-primary-b-normal) / 1.0);
+    --color-light-primary-hover:            hsl(var(--color-212deg-h) var(--color-light-primary-s-hover) var(--color-light-primary-b-hover) / 1.0);
+    --color-light-primary-pressed:          hsl(var(--color-212deg-h) var(--color-light-primary-s-hover) var(--color-light-primary-b-hover) / 1.0);
+    --color-light-primary-alpha-50:         hsl(var(--color-212deg-h) var(--color-light-primary-s-normal) var(--color-light-primary-b-normal) / 0.5);
+}
+
+:root {
+    --color-light-secondary-s-normal:       15%;
+    --color-light-secondary-s-hover:        20%;
+    --color-light-secondary-b-normal:       70%;
+    --color-light-secondary-b-hover:        77%;
+    --color-light-secondary-normal:         hsl(var(--color-212deg-h) var(--color-light-secondary-s-normal) var(--color-light-secondary-b-normal) / 1.0);
+    --color-light-secondary-hover:          hsl(var(--color-212deg-h) var(--color-light-secondary-s-hover) var(--color-light-secondary-b-hover) / 1.0);
+    --color-light-secondary-pressed:        hsl(var(--color-212deg-h) var(--color-light-secondary-s-hover) var(--color-light-secondary-b-hover) / 1.0);
+    --color-light-secondary-alpha-50:       hsl(var(--color-212deg-h) var(--color-light-secondary-s-normal) var(--color-light-secondary-b-normal) / 0.5);
+}
+
+:root {
+    --color-light-tertiary-s-normal:        15%;
+    --color-light-tertiary-s-hover:         20%;
+    --color-light-tertiary-b-normal:        55%;
+    --color-light-tertiary-b-hover:         62%;
+    --color-light-tertiary-normal:          hsl(var(--color-212deg-h) var(--color-light-tertiary-s-normal) var(--color-light-tertiary-b-normal) / 1.0);
+    --color-light-tertiary-hover:           hsl(var(--color-212deg-h) var(--color-light-tertiary-s-hover) var(--color-light-tertiary-b-hover) / 1.0);
+    --color-light-tertiary-pressed:         hsl(var(--color-212deg-h) var(--color-light-tertiary-s-hover) var(--color-light-tertiary-b-hover) / 1.0);
+    --color-light-tertiary-alpha-50:        hsl(var(--color-212deg-h) var(--color-light-tertiary-s-normal) var(--color-light-tertiary-b-normal) / 0.5);
+}
+
+:root {
+    --wp-admin-theme-color:                 var(--color-theme-primary-normal);
+    --wp-admin-theme-color--rgb:            0, 124, 186;
+    --wp-admin-theme-color-darker-10:       hsl(var(--color-205deg-h) 100% 31.57% / 1.0);
+    --wp-admin-theme-color-darker-10--rgb:  0, 107, 161;
+    --wp-admin-theme-color-darker-20:       hsl(var(--color-205deg-h) 100% 26.47% / 1.0);
+    --wp-admin-theme-color-darker-20--rgb:  0, 90, 135;
+    --wp-admin-border-width-focus:          2px;
+    --wp-block-synced-color:                hsl(272.83deg 100% 43.73%);
+    --wp-block-synced-color--rgb:           122, 0, 223;
+    --wp-bound-block-color:                 var(--wp-block-synced-color);
+}
+
+
+:root {
+	--btn-font-family:                      var(--font-family-display);
+	--btn-font-size:                        var(--text-size-xs);
+	--btn-compact-font-size:                var(--text-size-2xs);
+	--btn-icon-size:                        1.8em;
+	--btn-compact-icon-size:                1.8em;
+	--btn-compact-dashicon-size:            calc(var(--btn-compact-icon-size) * 0.8);
+	--btn-font-weight:                      400;
+	--btn-letter-spacing:                   0;
+	--btn-text-shadow:                      none;
+	--btn-line-height:                      1;
+	--btn-transition:                       all .15s linear;
+	--btn-transition-property:              background, border, box-shadow, color;
+	--btn-border-style:                     solid;
+	--btn-border-width:                     1px;
+	--btn-border-radius:                    var(--border-radius-md);
+	--btn-compact-border-radius:            var(--border-radius-sm);
+	--btn-container-border-radius:          calc(var(--border-radius-md) + calc(var(--size-md) * 0.045));
+	--btn-box-shadow:                       none;
+	--btn-box-shadow-hover:                 none;
+	--btn-box-shadow-gradient:              none;
+	--btn-box-shadow-gradient-hover:        none;
+	--btn-danger-filter:                    hue-rotate(var(--color-theme-primary-danger-hue-rotate));
+	--btn-disabled-filter:                  opacity(.5) brightness(1) grayscale(.5);
+	--btn-height:                           var(--size-7xl);
+	--btn-compact-height:                   var(--size-4xl);
+	--btn-padding-left:                     var(--size-sm);
+	--btn-padding-right:                    var(--size-sm);
+	--btn-padding-top:                      var(--size-3xs);
+	--btn-padding-bottom:                   var(--size-3xs);
+	--btn-compact-padding-left:             var(--size-xs);
+	--btn-compact-padding-right:            var(--size-xs);
+	--btn-compact-padding-top:              0;
+	--btn-compact-padding-bottom:           0;
+	--btn-border-style-focus:               dotted;
+	
+}
+
+:root {
+	--btn-theme-primary-background-color-normal:          var(--color-theme-primary-normal);
+    --btn-theme-primary-background-color-hover:           var(--color-theme-primary-hover);
+    --btn-theme-primary-background-color-pressed:         var(--color-darksteel-primary-normal);
+	--btn-theme-primary-border-color-normal:              var(--btn-theme-primary-background-color-normal);
+    --btn-theme-primary-border-color-hover:               var(--btn-theme-primary-background-color-hover);
+    --btn-theme-primary-border-color-pressed:             var(--btn-theme-primary-background-color-pressed);
+	--btn-theme-primary-text-color-normal:                #fff;
+    --btn-theme-primary-text-color-hover:                 var(--btn-theme-primary-text-color-normal);
+    --btn-theme-primary-text-color-pressed:               var(--btn-theme-primary-text-color-normal);
+    --btn-theme-border-color-focus:                         hsl(199deg 93% 39% / 80%);
+}
+
+:root {
+	/*--btn-theme-secondary-background-color-normal:        hsl(var(--color-205deg-h) 50% 98% / 1.0);*/
+	--btn-theme-secondary-background-color-normal:        hsl(var(--color-205deg-h) 55% 96% / 1.0);
+    --btn-theme-secondary-background-color-hover:         var(--color-theme-primary-hover);
+    --btn-theme-secondary-background-color-pressed:       var(--color-theme-primary-hover);
+	--btn-theme-secondary-border-color-normal:            var(--color-theme-primary-normal);
+    --btn-theme-secondary-border-color-hover:             var(--color-theme-primary-hover);
+    --btn-theme-secondary-border-color-pressed:           var(--color-theme-primary-hover);
+	--btn-theme-secondary-text-color-normal:              var(--color-theme-primary-normal);
+    --btn-theme-secondary-text-color-hover:               var(--btn-theme-primary-text-color-hover);
+    --btn-theme-secondary-text-color-pressed:             var(--btn-theme-primary-text-color-hover);
+}
+
+:root {
+	--btn-theme-tertiary-background-color-normal:         transparent;
+    --btn-theme-tertiary-background-color-hover:          var(--btn-theme-tertiary-background-color-normal);
+    --btn-theme-tertiary-background-color-pressed:        var(--btn-theme-tertiary-background-color-normal);
+	--btn-theme-tertiary-border-color-normal:             var(--btn-theme-tertiary-background-color-normal);
+    --btn-theme-tertiary-border-color-hover:              var(--btn-theme-tertiary-background-color-normal);
+    --btn-theme-tertiary-border-color-pressed:            var(--btn-theme-tertiary-background-color-normal);
+	--btn-theme-tertiary-text-color-normal:               hsl(var(--color-205deg-h) 60% 55% / 1.0);
+    --btn-theme-tertiary-text-color-hover:                hsl(var(--color-205deg-h) 100% 68% / 1.0);
+    --btn-theme-tertiary-text-color-pressed:              var(--btn-theme-tertiary-text-color-hover);
+}
+
+:root {
+	--btn-dark-primary-background-color-normal:     var(--color-darksteel-primary-normal);
+	--btn-dark-primary-background-color-hover:      var(--color-darksteel-primary-hover);
+	--btn-dark-primary-background-color-pressed:    var(--color-darksteel-primary-pressed);
+	--btn-dark-primary-border-color-normal:         var(--color-darksteel-primary-normal);
+	--btn-dark-primary-border-color-hover:          var(--color-darksteel-primary-hover);
+	--btn-dark-primary-border-color-pressed:        var(--color-darksteel-primary-pressed);
+	/*--btn-dark-primary-text-color-normal:         hsl(var(--color-212deg-h) 25% 85% / 1.0);*/
+	--btn-dark-primary-text-color-normal:           var(--color-light-primary-normal);
+	--btn-dark-primary-text-color-hover:            #fff;
+	--btn-dark-primary-text-color-pressed:          var(--btn-dark-primary-text-color-hover);
+}
+
+:root {
+	--btn-dark-secondary-background-color-normal:      transparent;
+	--btn-dark-secondary-background-color-hover:       var(--color-darksteel-primary-hover);
+	--btn-dark-secondary-background-color-pressed:     var(--color-darksteel-primary-pressed);
+	--btn-dark-secondary-border-color-normal:          var(--color-darksteel-primary-normal);
+	--btn-dark-secondary-border-color-hover:           var(--color-darksteel-primary-hover);
+	--btn-dark-secondary-border-color-pressed:         var(--color-darksteel-primary-pressed);
+	--btn-dark-secondary-text-color-normal:            var(--color-darksteel-primary-normal);
+	--btn-dark-secondary-text-color-hover:             var(--color-darksteel-primary-hover);
+	--btn-dark-secondary-text-color-pressed:           var(--color-darksteel-primary-pressed);
+}
+
+:root {
+	--btn-light-primary-background-color-normal:            var(--color-light-primary-normal);
+	--btn-light-primary-background-color-hover:             var(--color-light-primary-hover);
+	--btn-light-primary-background-color-pressed:           var(--color-light-primary-pressed);
+	--btn-light-primary-border-color-normal:                var(--color-light-primary-normal);
+	--btn-light-primary-border-color-hover:                 var(--color-light-primary-hover);
+	--btn-light-primary-border-color-pressed:               var(--color-light-primary-pressed);
+	--btn-light-primary-text-color-normal:                  var(--color-dark-primary-color);
+	/*--btn-light-primary-text-color-hover:                 hsl(var(--color-212deg-h) 24% 45% / 1.0);*/
+	--btn-light-primary-text-color-hover:                   var(--color-darksteel-secondary-normal);
+	/*--btn-light-primary-text-color-pressed:               hsl(var(--color-212deg-h) 24% 45% / 1.0);*/
+	--btn-light-primary-text-color-pressed:                 var(--btn-light-primary-text-color-hover);
+	
+}
+
+:root {
+	--btn-light-secondary-background-color-normal:          transparent;
+	--btn-light-secondary-background-color-hover:           var(--color-light-primary-hover);
+	--btn-light-secondary-background-color-pressed:         var(--color-light-primary-hover);
+	/*--btn-light-secondary-border-color-normal:            hsl(var(--color-212deg-h) 15% 50% / 1.0);*/
+	--btn-light-secondary-border-color-normal:              var(--color-light-tertiary-normal);
+	--btn-light-secondary-border-color-hover:               var(--color-light-primary-hover);
+	--btn-light-secondary-border-color-pressed:             var(--color-light-primary-hover);
+	/*--btn-light-secondary-text-color-normal:              hsl(var(--color-212deg-h) 15% 50% / 1.0);*/
+	--btn-light-secondary-text-color-normal:                var(--btn-light-secondary-border-color-normal);
+	/*--btn-light-secondary-text-color-hover:               hsl(var(--color-212deg-h) 24% 45% / 1.0);*/
+	--btn-light-secondary-text-color-hover:                 var(--color-darksteel-secondary-normal);
+	--btn-light-secondary-text-color-pressed:               var(--color-darksteel-secondary-normal);
+}
+
+:root {
+	--actions-btn-primary-background-color-normal:          hsl(var(--color-205deg-h) 60% 95% / 1.0);
+	--actions-btn-primary-background-color-hover:           hsl(var(--color-205deg-h) 70% 91% / 1.0);
+	--actions-btn-primary-background-color-pressed:         var(--actions-btn-primary-background-color-hover);
+	--actions-btn-primary-border-color-normal:              hsl(var(--color-205deg-h) 80% 90% / 1.0);
+	--actions-btn-primary-border-color-hover:               var(--actions-btn-primary-background-color-hover);
+	--actions-btn-primary-border-color-pressed:             var(--actions-btn-primary-background-color-hover);
+	--actions-btn-primary-text-color-normal:                hsl(var(--color-205deg-h) 50% 44% / 1.0);
+	--actions-btn-primary-text-color-hover:                 var(--actions-btn-primary-text-color-normal);
+	--actions-btn-primary-text-color-pressed:               var(--actions-btn-primary-text-color-normal);
+	--actions-btn-secondary-background-color-normal:        hsl(var(--color-212deg-h) 28% 36% / 1.0);
+	--actions-btn-secondary-background-color-hover:         hsl(var(--color-212deg-h) 28% 44% / 1.0);
+	--actions-btn-secondary-background-color-pressed:       var(--actions-btn-secondary-background-color-hover);
+	--actions-btn-secondary-border-color-normal:            var(--actions-btn-primary-background-color-normal);
+	--actions-btn-secondary-border-color-hover:             var(--actions-btn-primary-background-color-hover);
+	--actions-btn-secondary-border-color-pressed:           var(--actions-btn-secondary-border-color-hover);
+	--actions-btn-secondary-text-color-normal:              var(--color-light-primary-normal);
+	--actions-btn-secondary-text-color-hover:               #fff;
+	--actions-btn-secondary-text-color-pressed:             var(--actions-btn-secondary-text-color-hover);
+	--actions-btn-padding-left:                             calc(var(--size-md) * .35);
+	--actions-btn-padding-right:                            calc(var(--size-md) * .35);
+	--actions-btn-padding-top:                              calc(var(--size-md) * .25);
+	--actions-btn-padding-bottom:                           calc(var(--size-md) * .25);
+	--actions-btn-border-radius:                            var(--border-radius-sm);
+	--actions-btn-danger-filter:                            hue-rotate(var(--color-theme-primary-danger-hue-rotate)) saturate(1.75) contrast(1.15) brightness(0.95);
+}
+
+:root {
+    --menu-editor-background-color-normal:                  #fff;
+	--editor-btn-background-color-normal:                   hsl(var(--color-212deg-h) var(--color-light-primary-s-normal) 93% / 1.0);
+	--editor-btn-background-color-hover:                    hsl(var(--color-212deg-h) var(--color-light-primary-s-normal) 95% / 1.0);
+	--editor-btn-background-color-pressed:                  var(--btn-dark-primary-background-color-pressed);
+	--editor-btn-border-color-normal:                       var(--editor-btn-background-color-normal);
+	--editor-btn-border-color-hover:                        var(--editor-btn-background-color-normal);
+	--editor-btn-border-color-pressed:                      var(--btn-dark-primary-border-color-pressed);
+	--editor-btn-text-color-normal:                         var(--btn-light-primary-text-color-normal);
+	--editor-btn-text-color-hover:                          var(--btn-light-primary-text-color-hover);
+	--editor-btn-text-color-pressed:                        var(--btn-dark-primary-text-color-pressed);
+	--editor-btn-danger-filter:                             hue-rotate(-215deg) saturate(4.5);
+	--editor-btn-padding-left:                              var(--size-2xs);
+	--editor-btn-padding-right:                             var(--size-2xs);
+	--editor-btn-padding-top:                               var(--size-2xs);
+	--editor-btn-padding-bottom:                            var(--size-2xs);
+	--editor-btn-transition:                                var(--btn-transition);
+	--editor-btn-transition-property:                       var(--btn-transition-property);
+	--editor-btn-border-style:                              var(--btn-border-style);
+	--editor-btn-border-width:                              var(--btn-border-width);
+	--editor-btn-border-radius:                             var(--btn-compact-border-radius);
+}
+
+:root {
+	--size-md:              16px;
+    --size-7xs:             calc(var(--size-md) * 0.0625);
+    --size-6xs:             calc(var(--size-md) * 0.125);
+    --size-5xs:             calc(var(--size-md) * 0.25);
+    --size-4xs:             calc(var(--size-md) * 0.375);
+    --size-3xs:             calc(var(--size-md) * 0.5);
+    --size-2xs:             calc(var(--size-md) * 0.625);
+    --size-xs:              calc(var(--size-md) * 0.75);
+    --size-sm:              calc(var(--size-md) * 0.875);
+    --size-lg:              calc(var(--size-md) * 1.125);
+    --size-xl:              calc(var(--size-md) * 1.25);
+    --size-2xl:             calc(var(--size-md) * 1.375);
+    --size-3xl:             calc(var(--size-md) * 1.5);
+    --size-4xl:             calc(var(--size-md) * 1.625);
+    --size-5xl:             calc(var(--size-md) * 1.75);
+    --size-6xl:             calc(var(--size-md) * 1.875);
+    --size-7xl:             calc(var(--size-md) * 2);
+    --size-8xl:             calc(var(--size-md) * 2.125);
+    --size-9xl:             calc(var(--size-md) * 2.25);
+    --size-10xl:            calc(var(--size-md) * 2.375);
+    --size-11xl:            calc(var(--size-md) * 2.5);
+    --size-12xl:            calc(var(--size-md) * 2.625);
+    --size-13xl:            calc(var(--size-md) * 2.75);
+    --size-14xl:            calc(var(--size-md) * 2.875);
+    --size-15xl:            calc(var(--size-md) * 3);
+}
+
+:root {
+    --text-size-md:         16px;
+    --text-size-7xs:        calc(var(--text-size-md) * 0.375);
+    --text-size-6xs:        calc(var(--text-size-md) * 0.4375);
+    --text-size-5xs:        calc(var(--text-size-md) * 0.5);
+    --text-size-4xs:        calc(var(--text-size-md) * 0.5625);
+    --text-size-3xs:        calc(var(--text-size-md) * 0.625);
+    --text-size-2xs:        calc(var(--text-size-md) * 0.6875);
+    --text-size-xs:         calc(var(--text-size-md) * 0.75);
+    --text-size-sm:         calc(var(--text-size-md) * 0.875);
+    --text-size-lg:         calc(var(--text-size-md) * 1.125);
+    --text-size-xl:         calc(var(--text-size-md) * 1.25);
+    --text-size-2xl:        calc(var(--text-size-md) * 1.375);
+    --text-size-3xl:        calc(var(--text-size-md) * 1.5);
+    --text-size-4xl:        calc(var(--text-size-md) * 1.625);
+    --text-size-5xl:        calc(var(--text-size-md) * 1.75);
+    --text-size-6xl:        calc(var(--text-size-md) * 1.875);
+    --text-size-7xl:        calc(var(--text-size-md) * 2);
+    --text-size-8xl:        calc(var(--text-size-md) * 2.125);
+    --text-size-9xl:        calc(var(--text-size-md) * 2.25);
+    --text-size-10xl:       calc(var(--text-size-md) * 2.375);
+    --text-size-11xl:       calc(var(--text-size-md) * 2.5);
+    --text-size-12xl:       calc(var(--text-size-md) * 2.625);
+    --text-size-13xl:       calc(var(--text-size-md) * 2.75);
+    --text-size-14xl:       calc(var(--text-size-md) * 2.875);
+    --text-size-15xl:       calc(var(--text-size-md) * 3.00);
+    --text-size-16xl:       calc(var(--text-size-md) * 3.125);
+    --text-size-17xl:       calc(var(--text-size-md) * 3.250);
+    --text-size-18xl:       calc(var(--text-size-md) * 3.375);
+    --text-size-19xl:       calc(var(--text-size-md) * 3.500);
+    --text-size-20xl:       calc(var(--text-size-md) * 3.625);
+}
+
+:root {
+	--admin-bar-background-color:                           hsl(var(--color-212deg-h) var(--color-darksteel-primary-s-normal) 18% / 1.0);
+	--sidebar-background-color:                             var(--color-extra-darksteel-normal);
+	--sidebar-background-selected:                          var(--color-darksteel-primary-hover);
+	--sidebar-submenu-background-color:                     var(--color-darksteel-primary-normal);
+	--sidebar-submenu-text-color:                           var(--btn-dark-primary-text-color-normal);
+}
+
+:root {
+	--folder-tree-gap:                                      var(--size-xs);
+	--folder-icon-font-size:                                1.1em;
+	--folder-icon-width:                                    1.5em;
+	--folder-icon-color-normal:                             hsl(37deg 72% 52%);
+	--folder-icon-color-selected:                           var(--folder-icon-color-normal);
+	--folder-droppable-height:                              var(--size-3xl);
+	--folder-droppable-background-color-hover:              var(--color-light-primary-pressed);
+	--folder-droppable-background-color-selected:           var(--color-light-primary-normal);
+	--folder-droppable-text-color:                          var(--body-text-primary-color);
+	--folder-droppable-text-color-selected:                 var(--folder-droppable-text-color);
+}
+
+:root {
+	--input-background-color:                   #fff;
+	--input-background-image:                   url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' %3E%3Cpath fill=\'none\' stroke=\'%23667085\' stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M6 9l6 6 6-6\'/%3E%3C/svg%3E');
+	--input-border-color-normal:                var(--color-light-primary-normal);
+	--input-border-color-focus:                 var(--color-theme-primary-normal);
+	--input-radio-border-color-normal:          var(--color-light-primary-normal);
+	--input-radio-border-color-focus:           var(--input-border-color-focus);
+	--input-radio-height:                       var(--size-sm);
+	--input-radio-width:                        var(--size-sm);
+	--input-border-radius:                      var(--border-radius-md);
+	--input-border-style:                       solid;
+	--input-border-width:                       1px;
+	--input-box-shadow:                         none;
+	--input-checkbox-background-color-focus:            var(--btn-theme-secondary-background-color-normal);
+	--input-checkbox-background-image-focus:            url('data:image/svg+xml,%3Csvg width=\'18\' height=\'18\' viewBox=\'0 0 18 18\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M13.2002 5.8502L7.42519 11.6252L4.80019 9.0002\' stroke=\'%230783BE\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/%3E%3C/svg%3E%0A');
+	--input-checkbox-border-radius:                     2px;
+	--input-checkbox-height:                            var(--size-sm);
+	--input-checkbox-width:                             var(--size-sm);
+    --input-toggle-border-color-normal:                 var(--color-darksteel-primary-normal);
+    --input-toggle-border-color-hover:                 var(--color-darksteel-primary-hover);
+    --input-toggle-border-color-checked:                red;
+	--input-toggle-background-color-normal:             var(--color-darksteel-primary-normal);
+	--input-toggle-background-color-hover:             var(--color-darksteel-primary-hover);
+	--input-toggle-background-color-checked:            green;
+	
+	--input-range-trackline-background-color-normal:       var(--color-light-primary-normal);
+	--input-range-track-background-color-normal:       var(--color-darksteel-tertiary-normal);
+	--input-range-track-background-color-hover:       var(--color-darksteel-tertiary-hover);
+	--input-range-thumb-background-color-normal:       var(--color-darksteel-primary-normal);
+	--input-range-thumb-background-color-hover:       var(--color-darksteel-primary-hover);
+	
+	--input-font-size:                                  var(--text-size-xs);
+	--input-line-height:                                2;
+	--input-min-height:                         var(--size-7xl);
+	--input-padding-bottom:                     0;
+	--input-padding-left:                       var(--size-sm);
+	--input-padding-right:                      var(--size-sm);
+	--input-padding-top:                        0;
+	--input-radio-background-image-focus:       url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'18\' height=\'18\' viewBox=\'0 0 18 18\' fill=\'none\' %3E%3Crect x=\'5\' y=\'5\' width=\'8\' height=\'8\' rx=\'4\' fill=\'%230783BE\'/%3E%3C/svg%3E');
+	--input-select-background-position:         right var(--size-2xs) top 50%;
+	--input-select-background-repeat:           no-repeat;
+	--input-select-background-size:             var(--size-lg);
+	--input-select-min-width:                   calc(var(--size-md) * 5.875);
+	--input-select-padding-left:                var(--size-xs);
+	--input-select-padding-right:               var(--size-xl);
+	--input-text-color:                         var(--body-text-primary-color);
+}
+
+:root {
+	--card-background-color:                    #fff;
+	--subcard-background-color:                 hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 100%);
+	--card-background-gradient:                 linear-gradient(to bottom,  #ffffff 70%,#f7f7f7 100%);
+	--card-header-min-height:                   calc(var(--size-md) * 2.875);
+	--card-header-dark-background-color:        var(--color-darksteel-primary-normal);
+	--card-header-light-background-color:       var(--color-light-primary-normal);
+	--card-header-dark-text-color:              #fff;
+	--card-header-light-text-color:             var(--body-text-primary-color);
+	--modal-header-dark-background-color:        var(--color-extra-darksteel-normal);
+	--card-border-color:                        hsl(var(--color-212deg-h) 15% 85% / 1.0);
+	--card-inner-border-radius:                 var(--border-radius-md);
+	--card-border-radius:                       var(--border-radius-lg);
+	--card-border-width:                        1px;
+	--card-border-style:                        none;
+	--card-scrollbar-thumb-border-color:        var(--card-background-color);
+	--card-scrollbar-thumb-border-width:        8px;
+	--card-scrollbar-track-background:          var(--card-background-color);
+	--card-scrollbar-width:                     24px;
+	--card-box-shadow:                          0 1px 3px hsl(0deg 0% 0% / 5%), 0 0 18px -10px hsl(0deg 0% 0% / 40%);
+    --card-box-shadow:                          0 1px 3px hsl(0deg 0% 0% / 5%), 0 7px 18px -10px hsl(0deg 0% 0% / 20%);
+	--card-container-padding:                   var(--size-sm);
+	--card-inner-padding:                       var(--size-xs);
+	--card-inner-padding-in-between-components:     var(--size-2xs);
+	--card-inner-padding-below-label:               var(--size-5xs);
+	--card-dropdown-inner-padding:                  var(--card-inner-padding);
+	--card-dropdown-item-top-padding:               var(--size-5xs);
+	--card-dropdown-item-bottom-padding:            var(--size-5xs);
+}
+
+:root {
+	/*--mce-tinymce-toolbar-height: 2.25rem;*/
+	/*--mce-tinymce-toolbar-header-background-color: linear-gradient(to right, var(--bluish-gray-shade-85) 0%, var(--bluish-gray-shade-80) 100%);*/
+}
+
+:root {
+	/*--post-editor-header-height: 3rem;*/
+	/*--post-editor-toolbar-height: 3rem;*/
+	/*--post-editor-max-width: 1000px;*/
+	/*--post-editor-box-shadow: 0 1px 10px hsl(0deg 0% 0% / 15%), 0 27px 50px -50px hsl(0deg 0% 0% / 40%);*/
+}
+
+:root {
+	/*--modal-backdrop-background-color: rgb(0 0 0 / 60%);*/
+	/*--modal-header-height: 3rem;*/
+	/*--modal-header-background-color: var(--charcoal-blue-shade-1);
+	--modal-header-text-color: #fff;
+	--modal-header-font-size: var(--text-size-xl);
+	--modal-tabs-height: 2.25rem;
+	--modal-tabs-border-bottom-width: 4px;
+	--modal-right-sidebar-width: 267px;
+	--modal-media-toolbar-height: 5rem;*/
+}
+
+:root {
+	--notice-background-color:              hsl(var(--color-205deg-h) 50% 97% / 1.0);
+	--notice-border-color:                  hsl(var(--color-205deg-h) 70% 77%);
+	--notice-text-color-normal:             hsl(var(--color-205deg-h) 70% 60% / 1.0);
+	--notice-text-color-hover:              hsl(var(--color-205deg-h) 70% 67% / 1.0);
+	--notice-warning-background-color:      hsl(51 60% 94% / 1.0);
+	--notice-warning-border-color:          hsl(51 70% 60% / 1.0);
+	--notice-warning-background-color:      hsl(var(--color-warning-h) 60% 94% / 1.0);
+	--notice-warning-border-color:          hsl(var(--color-warning-h) 70% 60% / 1.0);
+	--notice-warning-text-color-normal:     hsl(var(--color-warning-h) 90% 45% / 1.0);
+	--notice-warning-text-color-hover:      hsl(var(--color-warning-h) 90% 52% / 1.0);
+	--notice-error-background-color:        hsl(355 67% 96%);
+	--notice-error-border-color:            hsl(1 70% 77%);
+	--notice-error-background-color:        hsl(var(--color-danger-h) 67% 96%);
+	--notice-error-border-color:            hsl(var(--color-danger-h) 70% 77%);
+	--notice-error-text-color-normal:       hsl(var(--color-danger-h) 70% 55% / 1.0);
+	--notice-error-text-color-hover:        hsl(var(--color-danger-h) 85% 62% / 1.0);
+	--notice-success-background-color:      hsl(157 65% 91%);
+	--notice-success-border-color:          hsl(157 100% 38% / 1.0);
+	--notice-success-background-color:      hsl(var(--color-success-h) 65% 91%);
+	--notice-success-border-color:          hsl(var(--color-success-h) 100% 38% / 1.0);
+	--notice-success-text-color-normal:     hsl(var(--color-success-h) 77% 40% / 1.0);
+	--notice-success-text-color-hover:      hsl(var(--color-success-h) 77% 47% / 1.0);
+	--notice-border-style:                  solid;
+	--notice-border-radius:                 var(--card-border-radius);
+	--notice-border-width:                  var(--card-border-width);
+	--notice-padding:                       var(--card-inner-padding);
+	--notice-box-shadow:                    0 1px 3px hsl(0deg 0% 0% / 5%), 0 0 18px -10px hsl(0deg 0% 0% / 40%);
+}
+
+:root {
+	/*only on this file and admin-menu.css*/
+	--boogerbuster-green-shade-1: hsl(67deg 70% 65%);
+	--boogerbuster-green-shade-2: hsl(67deg 70% 60%);
+	--boogerbuster-green-shade-3: hsl(67deg 70% 55%);
+	--boogerbuster-green-shade-4: hsl(67deg 70% 50%);
+	/*only on this file and admin-menu.css*/
+	/*only on this file and admin-bar.css*/
+    --charcoal-blue-shade-0: hsl(211deg 28% 44%);
+    --charcoal-blue-shade-1: hsl(211deg 28% 36%);
+    --charcoal-blue-shade-2: hsl(210deg 28% 24%);
+    --charcoal-blue-shade-3: hsl(210deg 30% 20%);
+    --charcoal-blue-shade-4: hsl(210deg 30% 15%);
+	/*only on this file and admin-bar.css*/
+	/*only on this file and wicked-folders.css*/
+	--cyancornflower-blue-shade-0: hsl(207deg 68% 52%);
+	--cyancornflower-blue-shade-1: hsl(207deg 68% 47%);
+	--cyancornflower-blue-shade-2: hsl(207deg 68% 42%);
+	--cyancornflower-blue-shade-3: hsl(207deg 68% 37%);
+	--cyancornflower-blue-shade-5: hsl(207deg 68% 32%);
+	--cyancornflower-blue-shade-6: hsl(207deg 68% 27%);
+	/*only on this file and wicked-folders.css*/
+	/*only on this file and admin-menu.css*/
+	--mustard-orange-shade-1: hsl(44deg 100% 70%);
+	--mustard-orange-shade-2: hsl(44deg 100% 65%);
+	--mustard-orange-shade-3: hsl(44deg 100% 60%);
+	--mustard-orange-shade-4: hsl(44deg 100% 55%);
+	/*only on this file and admin-menu.css*/
+}
+
+/*
+    --aquamarine-cyan-shade-1: hsl(145deg 100% 80%);
+    --aquamarine-cyan-shade-2: hsl(145deg 100% 75%);
+    --aquamarine-cyan-shade-3: hsl(145deg 100% 70%);
+    --aquamarine-cyan-shade-4: hsl(145deg 100% 65%);
+    --bangladesh-green-shade-1: hsl(174deg 100% 25%);
+    --bangladesh-green-shade-2: hsl(174deg 100% 20%);
+    --bangladesh-green-shade-3: hsl(174deg 100% 15%);
+    --bangladesh-green-shade-4: hsl(174deg 100% 10%);
+    --brightlilac-purple-shade-1: hsl(283deg 100% 85%);
+    --brightlilac-purple-shade-2: hsl(283deg 100% 80%);
+    --brightlilac-purple-shade-3: hsl(283deg 100% 75%);
+    --brightlilac-purple-shade-4: hsl(283deg 100% 70%);
+    --sunray-orange-shade-1: hsl(37deg 72% 32%);
+    --sunray-orange-shade-2: hsl(37deg 72% 42%);
+    --sunray-orange-shade-3: hsl(37deg 72% 52%);
+    --sunray-orange-shade-4: hsl(37deg 72% 62%);
+    --sunray-orange-shade-5: hsl(37deg 72% 72%);
+    --persianplum-red-1: hsl(1deg 64% 30%);
+    --persianplum-red-2: hsl(1deg 64% 25%);
+    --persianplum-red-3: hsl(1deg 64% 20%);
+    --persianplum-red-4: hsl(1deg 64% 15%);
+    --jellybean-blue-shade-1: hsl(199deg 40% 80%);
+    --jellybean-blue-shade-2: hsl(199deg 40% 70%);
+    --jellybean-blue-shade-3: hsl(199deg 40% 60%);
+    --jellybean-blue-shade-5: hsl(199deg 40% 50%);
+    --jellybean-blue-shade-6: hsl(199deg 40% 40%);
+*/
+
+/*:root {
+    --gray-shade-0: hsl(var(--color-212deg-h) 0% 1%);
+	--gray-shade-5: hsl(var(--color-212deg-h) 0% 5%);
+	--gray-shade-10: hsl(var(--color-212deg-h) 0% 10%);
+	--gray-shade-15: hsl(var(--color-212deg-h) 0% 15%);
+	--gray-shade-20: hsl(var(--color-212deg-h) 0% 20%);
+	--gray-shade-25: hsl(var(--color-212deg-h) 0% 25%);
+	--gray-shade-30: hsl(var(--color-212deg-h) 0% 30%);
+	--gray-shade-35: hsl(var(--color-212deg-h) 0% 35%);
+	--gray-shade-40: hsl(var(--color-212deg-h) 0% 40%);
+	--gray-shade-45: hsl(var(--color-212deg-h) 0% 45%);
+	--gray-shade-50: hsl(var(--color-212deg-h) 0% 50%);
+	--gray-shade-55: hsl(var(--color-212deg-h) 0% 55%);
+	--gray-shade-60: hsl(var(--color-212deg-h) 0% 60%);
+	--gray-shade-65: hsl(var(--color-212deg-h) 0% 65%);
+	--gray-shade-70: hsl(var(--color-212deg-h) 0% 70%);
+	--gray-shade-75: hsl(var(--color-212deg-h) 0% 75%);
+	--gray-shade-80: hsl(var(--color-212deg-h) 0% 80%);
+	--gray-shade-85: hsl(var(--color-212deg-h) 0% 85%);
+	--gray-shade-90: hsl(var(--color-212deg-h) 0% 90%);
+	--gray-shade-95: hsl(var(--color-212deg-h) 0% 95%);
+	--gray-shade-100: hsl(var(--color-212deg-h) 0% 100%);
+}*/
+
+:root {
+	--bluish-gray-shade-s: 15%;
+	--bluish-gray-shade-0: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 1%);
+	--bluish-gray-shade-5: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 5%);
+	--bluish-gray-shade-10: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 10%);
+	--bluish-gray-shade-15: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 15%);
+	--bluish-gray-shade-20: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 20%);
+	--bluish-gray-shade-25: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 25%);
+	--bluish-gray-shade-30: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 30%);
+	--bluish-gray-shade-35: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 35%);
+	--bluish-gray-shade-40: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 40%);
+	--bluish-gray-shade-45: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 45%);
+	--bluish-gray-shade-50: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 50%);
+	--bluish-gray-shade-55: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 55%);
+	--bluish-gray-shade-60: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 60%);
+	--bluish-gray-shade-65: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 65%);
+	--bluish-gray-shade-70: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 70%);
+	--bluish-gray-shade-75: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 75%);
+	--bluish-gray-shade-80: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 80%);
+	--bluish-gray-shade-85: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 85%);
+	--bluish-gray-shade-90: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 90%);
+	--bluish-gray-shade-95: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 95%);
+	--bluish-gray-shade-100: hsl(var(--color-212deg-h) var(--bluish-gray-shade-s) 100%);
+}
+
+
+
+:root {
+	--scrollbar-border-width: 2px;
+	--scrollbar-thumb-background: var(--bluish-gray-shade-60);
+	--scrollbar-thumb-background-hover: var(--bluish-gray-shade-35);
+	--scrollbar-thumb-border-color: var(--bluish-gray-shade-90);
+	--scrollbar-thumb-border-radius: 20px;
+	--scrollbar-thumb-border-width: 3px;
+	--scrollbar-track-background: var(--bluish-gray-shade-90);
+	--scrollbar-track-border-radius: 20px;
+	--scrollbar-transition: background 300ms linear, all 300ms linear;
+	--scrollbar-width: 14px;
+}
+
+:root {
+    /*--color-black: black;
+    --color-dimgray: dimgray;
+    --color-dimgrey: dimgrey;
+    --color-gray: gray;
+    --color-grey: grey;
+    --color-darkgray: darkgray;
+    --color-darkgrey: darkgrey;
+    --color-silver: silver;
+    --color-lightgray: lightgray;
+    --color-lightgrey: lightgrey;
+    --color-gainsboro: gainsboro;
+    --color-whitesmoke: whitesmoke;
+    --color-white: white;
+    --color-snow: snow;
+    --color-rosybrown: rosybrown;
+    --color-lightcoral: lightcoral;
+    --color-indianred: indianred;
+    --color-brown: brown;
+    --color-firebrick: firebrick;
+    --color-maroon: maroon;
+    --color-darkred: darkred;
+    --color-red: red;
+    --color-mistyrose: mistyrose;
+    --color-salmon: salmon;
+    --color-tomato: tomato;
+    --color-darksalmon: darksalmon;
+    --color-coral: coral;
+    --color-orangered: orangered;
+    --color-lightsalmon: lightsalmon;
+    --color-sienna: sienna;
+    --color-seashell: seashell;
+    --color-chocolate: chocolate;
+    --color-saddlebrown: saddlebrown;
+    --color-sandybrown: sandybrown;
+    --color-peachpuff: peachpuff;
+    --color-peru: peru;
+    --color-linen: linen;
+    --color-bisque: bisque;
+    --color-darkorange: darkorange;
+    --color-burlywood: burlywood;
+    --color-antiquewhite: antiquewhite;
+    --color-tan: tan;
+    --color-navajowhite: navajowhite;
+    --color-blanchedalmond: blanchedalmond;
+    --color-papayawhip: papayawhip;
+    --color-moccasin: moccasin;
+    --color-orange: orange;
+    --color-wheat: wheat;
+    --color-oldlace: oldlace;
+    --color-floralwhite: floralwhite;
+    --color-darkgoldenrod: darkgoldenrod;
+    --color-goldenrod: goldenrod;
+    --color-cornsilk: cornsilk;
+    --color-gold: gold;
+    --color-lemonchiffon: lemonchiffon;
+    --color-khaki: khaki;
+    --color-palegoldenrod: palegoldenrod;
+    --color-darkkhaki: darkkhaki;
+    --color-ivory: ivory;
+    --color-beige: beige;
+    --color-lightyellow: lightyellow;
+    --color-lightgoldenrodyellow: lightgoldenrodyellow;
+    --color-olive: olive;
+    --color-yellow: yellow;
+    --color-olivedrab: olivedrab;
+    --color-yellowgreen: yellowgreen;
+    --color-darkolivegreen: darkolivegreen;
+    --color-greenyellow: greenyellow;
+    --color-chartreuse: chartreuse;
+    --color-lawngreen: lawngreen;
+    --color-honeydew: honeydew;
+    --color-darkseagreen: darkseagreen;
+    --color-palegreen: palegreen;
+    --color-lightgreen: lightgreen;
+    --color-forestgreen: forestgreen;
+    --color-limegreen: limegreen;
+    --color-darkgreen: darkgreen;
+    --color-green: green;
+    --color-lime: lime;
+    --color-seagreen: seagreen;
+    --color-mediumseagreen: mediumseagreen;
+    --color-springgreen: springgreen;
+    --color-mintcream: mintcream;
+    --color-mediumspringgreen: mediumspringgreen;
+    --color-mediumaquamarine: mediumaquamarine;
+    --color-aquamarine: aquamarine;
+    --color-turquoise: turquoise;
+    --color-lightseagreen: lightseagreen;
+    --color-mediumturquoise: mediumturquoise;
+    --color-azure: azure;
+    --color-lightcyan: lightcyan;
+    --color-darkslategray: darkslategray;
+    --color-paleturquoise: paleturquoise;
+    --color-darkslategrey: darkslategrey;
+    --color-teal: teal;
+    --color-darkcyan: darkcyan;
+    --color-aqua: aqua;
+    --color-cyan: cyan;
+    --color-darkturquoise: darkturquoise;
+    --color-cadetblue: cadetblue;
+    --color-deepskyblue: deepskyblue;
+    --color-powderblue: powderblue;
+    --color-skyblue: skyblue;
+    --color-lightblue: lightblue;
+    --color-steelblue: steelblue;
+    --color-lightskyblue: lightskyblue;
+    --color-aliceblue: aliceblue;
+    --color-dodgerblue: dodgerblue;
+    --color-lightslategray: lightslategray;
+    --color-lightslategrey: lightslategrey;
+    --color-slategray: slategray;
+    --color-slategrey: slategrey;
+    --color-lightsteelblue: lightsteelblue;
+    --color-cornflowerblue: cornflowerblue;
+    --color-royalblue: royalblue;
+    --color-ghostwhite: ghostwhite;
+    --color-lavender: lavender;
+    --color-midnightblue: midnightblue;
+    --color-navy: navy;
+    --color-darkblue: darkblue;
+    --color-mediumblue: mediumblue;
+    --color-blue: blue;
+    --color-slateblue: slateblue;
+    --color-darkslateblue: darkslateblue;
+    --color-mediumslateblue: mediumslateblue;
+    --color-mediumpurple: mediumpurple;
+    --color-rebeccapurple: rebeccapurple;
+    --color-blueviolet: blueviolet;
+    --color-indigo: indigo;
+    --color-darkorchid: darkorchid;
+    --color-darkviolet: darkviolet;
+    --color-mediumorchid: mediumorchid;
+    --color-thistle: thistle;
+    --color-plum: plum;
+    --color-violet: violet;
+    --color-purple: purple;
+    --color-darkmagenta: darkmagenta;
+    --color-fuchsia: fuchsia;
+    --color-magenta: magenta;
+    --color-orchid: orchid;
+    --color-mediumvioletred: mediumvioletred;
+    --color-deeppink: deeppink;
+    --color-lavenderblush: lavenderblush;
+    --color-hotpink: hotpink;
+    --color-palevioletred: palevioletred;
+    --color-crimson: crimson;
+    --color-pink: pink;
+    --color-lightpink: lightpink;
+    --color-black: hsl(0deg 0% 0%);
+    --color-dimgray: hsl(0deg 0% 41.18%);
+    --color-dimgrey: hsl(0deg 0% 41.18%);
+    --color-gray: hsl(0deg 0% 50.2%);
+    --color-grey: hsl(0deg 0% 50.2%);
+    --color-darkgray: hsl(0deg 0% 66.27%);
+    --color-darkgrey: hsl(0deg 0% 66.27%);
+    --color-silver: hsl(0deg 0% 75.29%);
+    --color-lightgray: hsl(0deg 0% 82.75%);
+    --color-lightgrey: hsl(0deg 0% 82.75%);
+    --color-gainsboro: hsl(0deg 0% 86.27%);
+    --color-whitesmoke: hsl(0deg 0% 96.08%);
+    --color-white: hsl(0deg 0% 100%);
+    --color-snow: hsl(0deg 0% 99.02%);
+    --color-rosybrown: hsl(0deg 25.14% 64.9%);
+    --color-lightcoral: hsl(0deg 78.87% 72.16%);
+    --color-indianred: hsl(0deg 53.05% 58.24%);
+    --color-brown: hsl(0deg 59.42% 40.59%);
+    --color-firebrick: hsl(0deg 67.92% 41.57%);
+    --color-maroon: hsl(0deg 100% 25.1%);
+    --color-darkred: hsl(0deg 100% 27.25%);
+    --color-red: hsl(0deg 100% 50%);
+    --color-mistyrose: hsl(6deg 100% 94.12%);
+    --color-salmon: hsl(6.18deg 93.15% 71.37%);
+    --color-tomato: hsl(9.13deg 100% 63.92%);
+    --color-darksalmon: hsl(15.14deg 71.61% 69.61%);
+    --color-coral: hsl(16.11deg 100% 65.69%);
+    --color-orangered: hsl(16.24deg 100% 50%);
+    --color-lightsalmon: hsl(17.14deg 100% 73.92%);
+    --color-sienna: hsl(19.3deg 56.1% 40.2%);
+    --color-seashell: hsl(24.71deg 100% 96.67%);
+    --color-chocolate: hsl(25deg 75% 47.06%);
+    --color-saddlebrown: hsl(25deg 75.95% 30.98%);
+    --color-sandybrown: hsl(27.57deg 87.06% 66.67%);
+    --color-peachpuff: hsl(28.29deg 100% 86.27%);
+    --color-peru: hsl(29.58deg 58.68% 52.55%);
+    --color-linen: hsl(30deg 66.67% 94.12%);
+    --color-bisque: hsl(32.54deg 100% 88.43%);
+    --color-darkorange: hsl(32.94deg 100% 50%);
+    --color-burlywood: hsl(33.79deg 56.86% 70%);
+    --color-antiquewhite: hsl(34.29deg 77.78% 91.18%);
+    --color-tan: hsl(34.29deg 43.75% 68.63%);
+    --color-navajowhite: hsl(35.85deg 100% 83.92%);
+    --color-blanchedalmond: hsl(36deg 100% 90.2%);
+    --color-papayawhip: hsl(37.14deg 100% 91.76%);
+    --color-moccasin: hsl(38.11deg 100% 85.49%);
+    --color-orange: hsl(38.82deg 100% 50%);
+    --color-wheat: hsl(39.09deg 76.74% 83.14%);
+    --color-oldlace: hsl(39.13deg 85.19% 94.71%);
+    --color-floralwhite: hsl(40deg 100% 97.06%);
+    --color-darkgoldenrod: hsl(42.66deg 88.72% 38.24%);
+    --color-goldenrod: hsl(42.9deg 74.4% 49.02%);
+    --color-cornsilk: hsl(48deg 100% 93.14%);
+    --color-gold: hsl(50.59deg 100% 50%);
+    --color-lemonchiffon: hsl(54deg 100% 90.2%);
+    --color-khaki: hsl(54deg 76.92% 74.51%);
+    --color-palegoldenrod: hsl(54.71deg 66.67% 80%);
+    --color-darkkhaki: hsl(55.61deg 38.32% 58.04%);
+    --color-ivory: hsl(60deg 100% 97.06%);
+    --color-beige: hsl(60deg 55.56% 91.18%);
+    --color-lightyellow: hsl(60deg 100% 93.92%);
+    --color-lightgoldenrodyellow: hsl(60deg 80% 90.2%);
+    --color-olive: hsl(60deg 100% 25.1%);
+    --color-yellow: hsl(60deg 100% 50%);
+    --color-olivedrab: hsl(79.63deg 60.45% 34.71%);
+    --color-yellowgreen: hsl(79.74deg 60.78% 50%);
+    --color-darkolivegreen: hsl(82deg 38.96% 30.2%);
+    --color-greenyellow: hsl(83.65deg 100% 59.22%);
+    --color-chartreuse: hsl(90.12deg 100% 50%);
+    --color-lawngreen: hsl(90.48deg 100% 49.41%);
+    --color-honeydew: hsl(120deg 100% 97.06%);
+    --color-darkseagreen: hsl(120deg 25.14% 64.9%);
+    --color-palegreen: hsl(120deg 92.52% 79.02%);
+    --color-lightgreen: hsl(120deg 73.44% 74.9%);
+    --color-forestgreen: hsl(120deg 60.69% 33.92%);
+    --color-limegreen: hsl(120deg 60.78% 50%);
+    --color-darkgreen: hsl(120deg 100% 19.61%);
+    --color-green: hsl(120deg 100% 25.1%);
+    --color-lime: hsl(120deg 100% 50%);
+    --color-seagreen: hsl(146.45deg 50.27% 36.27%);
+    --color-mediumseagreen: hsl(146.72deg 49.79% 46.86%);
+    --color-springgreen: hsl(149.88deg 100% 50%);
+    --color-mintcream: hsl(150deg 100% 98.04%);
+    --color-mediumspringgreen: hsl(156.96deg 100% 49.02%);
+    --color-mediumaquamarine: hsl(159.61deg 50.74% 60.2%);
+    --color-aquamarine: hsl(159.84deg 100% 74.9%);
+    --color-turquoise: hsl(174deg 72.07% 56.47%);
+    --color-lightseagreen: hsl(176.71deg 69.52% 41.18%);
+    --color-mediumturquoise: hsl(177.81deg 59.83% 55.1%);
+    --color-azure: hsl(180deg 100% 97.06%);
+    --color-lightcyan: hsl(180deg 100% 93.92%);
+    --color-darkslategray: hsl(180deg 25.4% 24.71%);
+    --color-paleturquoise: hsl(180deg 64.95% 80.98%);
+    --color-darkslategrey: hsl(180deg 25.4% 24.71%);
+    --color-teal: hsl(180deg 100% 25.1%);
+    --color-darkcyan: hsl(180deg 100% 27.25%);
+    --color-aqua: hsl(180deg 100% 50%);
+    --color-cyan: hsl(180deg 100% 50%);
+    --color-darkturquoise: hsl(180.86deg 100% 40.98%);
+    --color-cadetblue: hsl(181.85deg 25.49% 50%);
+    --color-powderblue: hsl(186.67deg 51.92% 79.61%);
+    --color-linkblue: hsl(190deg 100% 37%);
+    --color-lightblue: hsl(194.74deg 53.27% 79.02%);
+    --color-deepskyblue: hsl(195.06deg 100% 50%);
+    --color-skyblue: hsl(197.4deg 71.43% 72.55%);
+    --color-lightskyblue: hsl(202.96deg 92% 75.49%);
+    --color-lightblue: hsl(205deg 75% 50%);
+    --color-steelblue: hsl(207.27deg 44% 49.02%);
+    --color-aliceblue: hsl(208deg 100% 97.06%);
+    --color-dodgerblue: hsl(209.6deg 100% 55.88%);
+    --color-lightslategray: hsl(210deg 14.29% 53.33%);
+    --color-lightslategrey: hsl(210deg 14.29% 53.33%);
+    --color-slategray: hsl(210deg 12.6% 50.2%);
+    --color-slategrey: hsl(210deg 12.6% 50.2%);
+    --color-lightsteelblue: hsl(213.91deg 41.07% 78.04%);
+    --color-cornflowerblue: hsl(218.54deg 79.19% 66.08%);
+    --color-royalblue: hsl(225deg 72.73% 56.86%);
+    --color-ghostwhite: hsl(240deg 100% 98.63%);
+    --color-lavender: hsl(240deg 66.67% 94.12%);
+    --color-midnightblue: hsl(240deg 63.5% 26.86%);
+    --color-navy: hsl(240deg 100% 25.1%);
+    --color-darkblue: hsl(240deg 100% 27.25%);
+    --color-mediumblue: hsl(240deg 100% 40.2%);
+    --color-blue: hsl(240deg 100% 50%);
+    --color-slateblue: hsl(248.35deg 53.49% 57.84%);
+    --color-darkslateblue: hsl(248.46deg 39% 39.22%);
+    --color-mediumslateblue: hsl(248.51deg 79.76% 67.06%);
+    --color-mediumpurple: hsl(259.63deg 59.78% 64.9%);
+    --color-rebeccapurple: hsl(270deg 50% 40%);
+    --color-blueviolet: hsl(271.15deg 75.93% 52.75%);
+    --color-indigo: hsl(274.62deg 100% 25.49%);
+    --color-darkorchid: hsl(280.13deg 60.63% 49.8%);
+    --color-darkviolet: hsl(282.09deg 100% 41.37%);
+    --color-mediumorchid: hsl(288.1deg 58.88% 58.04%);
+    --color-thistle: hsl(300deg 24.27% 79.8%);
+    --color-plum: hsl(300deg 47.29% 74.71%);
+    --color-violet: hsl(300deg 76.06% 72.16%);
+    --color-purple: hsl(300deg 100% 25.1%);
+    --color-darkmagenta: hsl(300deg 100% 27.25%);
+    --color-fuchsia: hsl(300deg 100% 50%);
+    --color-magenta: hsl(300deg 100% 50%);
+    --color-orchid: hsl(302.26deg 58.89% 64.71%);
+    --color-mediumvioletred: hsl(322.25deg 80.91% 43.14%);
+    --color-deeppink: hsl(327.57deg 100% 53.92%);
+    --color-hotpink: hsl(330deg 100% 70.59%);
+    --color-lavenderblush: hsl(340deg 100% 97.06%);
+    --color-palevioletred: hsl(340.37deg 59.78% 64.9%);
+    --color-crimson: hsl(348.66deg 85.77% 50.39%);
+    --color-pink: hsl(349.52deg 100% 87.65%);
+    --color-lightpink: hsl(350.96deg 100% 85.69%);*/
+    --color-black-h: 0;
+    --color-dimgray-h: 0;
+    --color-dimgrey-h: 0;
+    --color-gray-h: 0;
+    --color-grey-h: 0;
+    --color-darkgray-h: 0;
+    --color-darkgrey-h: 0;
+    --color-silver-h: 0;
+    --color-lightgray-h: 0;
+    --color-lightgrey-h: 0;
+    --color-gainsboro-h: 0;
+    --color-whitesmoke-h: 0;
+    --color-white-h: 0;
+    --color-snow-h: 0;
+    --color-rosybrown-h: 0;
+    --color-lightcoral-h: 0;
+    --color-indianred-h: 0;
+    --color-brown-h: 0;
+    --color-firebrick-h: 0;
+    --color-maroon-h: 0;
+    --color-darkred-h: 0;
+    --color-red-h: 0;
+    --color-mistyrose-h: 6;
+    --color-salmon-h: 6.18;
+    --color-tomato-h: 9.13;
+    --color-darksalmon-h: 15.14;
+    --color-coral-h: 16.11;
+    --color-orangered-h: 16.24;
+    --color-lightsalmon-h: 17.14;
+    --color-sienna-h: 19.3;
+    --color-seashell-h: 24.71;
+    --color-chocolate-h: 25;
+    --color-saddlebrown-h: 25;
+    --color-sandybrown-h: 27.57;
+    --color-peachpuff-h: 28.29;
+    --color-peru-h: 29.58;
+    --color-linen-h: 30;
+    --color-bisque-h: 32.54;
+    --color-darkorange-h: 32.94;
+    --color-burlywood-h: 33.79;
+    --color-antiquewhite-h: 34.29;
+    --color-tan-h: 34.29;
+    --color-navajowhite-h: 35.85;
+    --color-blanchedalmond-h: 36;
+    --color-papayawhip-h: 37.14;
+    --color-moccasin-h: 38.11;
+    --color-orange-h: 38.82;
+    --color-wheat-h: 39.09;
+    --color-oldlace-h: 39.13;
+    --color-floralwhite-h: 40;
+    --color-darkgoldenrod-h: 42.66;
+    --color-goldenrod-h: 42.9;
+    --color-cornsilk-h: 48;
+    --color-gold-h: 50.59;
+    --color-lemonchiffon-h: 54;
+    --color-khaki-h: 54;
+    --color-palegoldenrod-h: 54.71;
+    --color-darkkhaki-h: 55.61;
+    --color-ivory-h: 60;
+    --color-beige-h: 60;
+    --color-lightyellow-h: 60;
+    --color-lightgoldenrodyellow-h: 60;
+    --color-olive-h: 60;
+    --color-yellow-h: 60;
+    --color-olivedrab-h: 79.63;
+    --color-yellowgreen-h: 79.74;
+    --color-darkolivegreen-h: 82;
+    --color-greenyellow-h: 83.65;
+    --color-chartreuse-h: 90.12;
+    --color-lawngreen-h: 90.48;
+    --color-honeydew-h: 120;
+    --color-darkseagreen-h: 120;
+    --color-palegreen-h: 120;
+    --color-lightgreen-h: 120;
+    --color-forestgreen-h: 120;
+    --color-limegreen-h: 120;
+    --color-darkgreen-h: 120;
+    --color-green-h: 120;
+    --color-lime-h: 120;
+    --color-seagreen-h: 146.45;
+    --color-mediumseagreen-h: 146.72;
+    --color-springgreen-h: 149.88;
+    --color-mintcream-h: 150;
+    --color-mediumspringgreen-h: 156.96;
+    --color-mediumaquamarine-h: 159.61;
+    --color-aquamarine-h: 159.84;
+    --color-turquoise-h: 174;
+    --color-lightseagreen-h: 176.71;
+    --color-mediumturquoise-h: 177.81;
+    --color-azure-h: 180;
+    --color-lightcyan-h: 180;
+    --color-darkslategray-h: 180;
+    --color-paleturquoise-h: 180;
+    --color-darkslategrey-h: 180;
+    --color-teal-h: 180;
+    --color-darkcyan-h: 180;
+    --color-aqua-h: 180;
+    --color-cyan-h: 180;
+    --color-darkturquoise-h: 180.86;
+    --color-cadetblue-h: 181.85;
+    --color-powderblue-h: 186.67;
+    --color-linkblue-h: 190;
+    --color-deepskyblue-h: 195.06;
+    --color-skyblue-h: 197.4;
+    --color-lightskyblue-h: 202.96;
+    --color-lightblue-h: 205;
+    --color-steelblue-h: 207.27;
+    --color-aliceblue-h: 208;
+    --color-dodgerblue-h: 209.6;
+    --color-lightslategray-h: 210;
+    --color-lightslategrey-h: 210;
+    --color-slategray-h: 210;
+    --color-slategrey-h: 210;
+    --color-lightsteelblue-h: 212;
+    --color-cornflowerblue-h: 218.54;
+    --color-royalblue-h: 225;
+    --color-ghostwhite-h: 240;
+    --color-lavender-h: 240;
+    --color-midnightblue-h: 240;
+    --color-navy-h: 240;
+    --color-darkblue-h: 240;
+    --color-mediumblue-h: 240;
+    --color-blue-h: 240;
+    --color-slateblue-h: 248.35;
+    --color-darkslateblue-h: 248.46;
+    --color-mediumslateblue-h: 248.51;
+    --color-mediumpurple-h: 259.63;
+    --color-rebeccapurple-h: 270;
+    --color-blueviolet-h: 271.15;
+    --color-indigo-h: 274.62;
+    --color-darkorchid-h: 280.13;
+    --color-darkviolet-h: 282.09;
+    --color-mediumorchid-h: 288.1;
+    --color-thistle-h: 300;
+    --color-plum-h: 300;
+    --color-violet-h: 300;
+    --color-purple-h: 300;
+    --color-darkmagenta-h: 300;
+    --color-fuchsia-h: 300;
+    --color-magenta-h: 300;
+    --color-orchid-h: 302.26;
+    --color-mediumvioletred-h: 322.25;
+    --color-deeppink-h: 327.57;
+    --color-hotpink-h: 330;
+    --color-lavenderblush-h: 340;
+    --color-palevioletred-h: 340.37;
+    --color-crimson-h: 348.66;
+    --color-pink-h: 349.52;
+    --color-lightpink-h: 350.96;
+}
