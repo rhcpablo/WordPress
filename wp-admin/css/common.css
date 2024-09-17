@@ -1,3 +1,4 @@
+#wpcode-notice-consider-upgrading,
 .fs-notice.fs-sticky.fs-has-title.fs-slug-exclusive-divi.fs-type-plugin,
 .fs-notice.promotion.fs-sticky.fs-has-title.fs-slug-squad-modules-for-divi.fs-type-plugin,
 #filebird-empty-folder-notice,
@@ -41,6 +42,7 @@ body:not(.settings_page_boldgrid-connect) #container_boldgrid_api_key_notice,
 	display: none !important;
 }
 
+body.udb-user-p2klabs #wpcode-notice-consider-upgrading,
 body.udb-user-p2klabs #filebird-empty-folder-notice,
 body.udb-user-p2klabs .vc_license-activation-notice,
 body.udb-user-p2klabs #c2c,
